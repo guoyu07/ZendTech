@@ -1,0 +1,21 @@
+{
+  "name": "tech-blog-front-end",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "handlebars": "^4.0.6",
+    "jquery": "^3.1.1",
+    "sammy": "^0.7.6",
+    "sha1": "^1.1.1",
+    "systemjs": "^0.20.9",
+    "systemjs-plugin-babel": "0.0.21",
+    "toastr": "^2.1.2"
+  }
+}
