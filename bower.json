@@ -1,5 +1,5 @@
 {
-  "name": "advert-market-node-js-project",
+  "name": "zend-tech",
   "description": "course project",
   "main": "main.js",
   "authors": "none",
@@ -13,7 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "notifier": "^1.1.2",
     "jquery-ui": "^1.12.1",
     "Autocomplete": "autocomplete#^2.0.5",
     "handlebars": "^4.0.5",
