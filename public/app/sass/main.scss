@@ -1,0 +1,150 @@
+@import './variables';
+@import './partials/reset';
+@import './partials/font-size';
+@import './partials/footer';
+@import './partials/nav';
+@import './partials/carousel';
+@import './partials/jumbotron';
+@import './mixins/no-idea';
+@font-face {
+    font-family: 'Kreon';
+    src: url('../../assets/fonts/Kreon-Light.ttf');
+}
+
+@font-face {
+    font-family: "DroidSans";
+    src: url('../../assets/fonts/DroidSans.ttf');
+}
+
+body {
+    font-size: 15px;
+    font-family: 'DroidSans', 'Kreon', 'Times New Roman', Times, serif;
+}
+
+.posts {
+    .post-item {
+        @include side-margins(50px,
+        50px);
+        width: 25%;
+        z-index: 0;
+        margin-bottom: 25px;
+        display: inline-block;
+        a:hover {
+            color: $blue;
+        }
+        .post-image {
+            display: block;
+            min-height: 200px;
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+    .post-box {
+        width: 100%;
+        height: 50%;
+        @include shadow();
+    }
+}
+
+aside {
+    margin-top: 15px;
+    .home-aside-links {
+        .blog-links {
+            margin-bottom: 10px;
+            width: 45%;
+        }
+        z-index: 5;
+        @include side-margins(50px,
+        50px);
+        ul {
+            width: 30%;
+            @include side-margins(15px,
+            0);
+        }
+        p {
+            line-height: 1.4
+        }
+    }
+    .home-video {
+        div {
+            @include shadow();
+        }
+        iframe {
+            margin: 20px 30px 20px 30px;
+        }
+    }
+}
+
+.jumbotron-single-post {
+    .single-post {
+        -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+        -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+        box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    }
+}
+
+.jumbotron-post-header {
+    padding: 0;
+    margin: 0;
+    .post-header {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+.post-page {
+    margin-left: 15px;
+}
+
+.post-article {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    .article {
+        div {
+            margin-top: 15px;
+        }
+        p {
+            line-height: 1.9;
+            text-align: justify;
+        }
+    }
+    .pain-in-the-ass {
+        padding: 0;
+    }
+    .post-image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.video-wrapper {
+    margin: 0;
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.side-menu-wrapper {
+    ul li a p {
+        line-height: 1.4;
+    }
+    ul {
+        margin-bottom: 50px;
+    }
+}
+
+.comments-wrapper {
+    margin-left: 30px;
+}

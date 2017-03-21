@@ -3,6 +3,11 @@
     src: url('./assets/fonts/Kreon-Light.ttf');
 }
 
+@font-face {
+    font-family: "DroidSans";
+    src: url('./assets/fonts/DroidSans.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;

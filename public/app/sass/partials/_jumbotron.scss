@@ -1,0 +1,25 @@
+@import '../variables';
+@import '../mixins/no-idea';
+.jumbotron {
+    font-family: 'Kreon';
+    padding-top: 2px;
+    background-color: white;
+    .container {
+        width: 90%;
+        margin-top: 10px;
+        border-top: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 3.733rem;
+            @include top-down-margins(30px, 15px);
+        }
+        p {
+            @include top-down-margins(0px, 30px);
+            text-align: center;
+            color: $gray;
+            // font-size: 1rem;
+        }
+    }
+}

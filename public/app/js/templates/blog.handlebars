@@ -1,0 +1,158 @@
+<ol class="breadcrumb">
+    <li><a href="#/home">Home</a></li>
+    <li><a href="#/{{category}}">{{category}}</a></li>
+    <li class="active">{{title}}</li>
+</ol>
+<section class="posts">
+    <div class="jumbotron jumbotron-single-post">
+        <div class="container single-post">
+            <h1 class="text-center">{{title}}</h1>
+            <p class="text-center">Posted by {{postedBy}} on {{postedOn}} in {{category}}</p>
+        </div>
+    </div>
+    <div class="post-page row">
+        <div class="col-md-9 post-wrapper">
+            <div class="text-justify jumbotron jumbotron-post-header">
+                <div class="container post-header">
+                    <span>Posted by <strong>{{postedBy}}</strong> on <strong>{{postedOn}}</strong> | {{comments.length}} Comments</span>
+                </div>
+            </div>
+            <div class="post-article row">
+                <div class="col-md-11 pain-in-the-ass">
+                    <div class="image-wrapper">
+                        <img class="post-image image-responsive" src="{{image}}" alt="{{title}}">
+                    </div>
+                </div>
+                <div class="article row">
+                    <div class="col-md-11">
+                        <p>{{article}}</p>
+                    </div>
+                </div>
+                <div class="row video-wrapper">
+                    <div class="col-md-11 video-container">
+                        <iframe width="860" height="515" src="{{videoUrl}}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 side-menu-wrapper">
+            <h3>From the Blog</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <p>HTC Desire 5 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Iphone 8 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Sony Xperia Z5 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Samsung Galaxy S8 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Nokia 3380 Review</p>
+                    </a>
+                </li>
+            </ul>
+            <h3>Archives</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <p>HTC Desire 5 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Iphone 8 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Sony Xperia Z5 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Samsung Galaxy S8 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Nokia 3380 Review</p>
+                    </a>
+                </li>
+            </ul>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <p>HTC Desire 5 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Iphone 8 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Sony Xperia Z5 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Samsung Galaxy S8 Review</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Nokia 3380 Review</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="comments-wrapper col-md-8">
+            <h1>{{comments.length}} Comments</h1>
+            {{#comments}}
+            <div class="comment-box row">
+                <div class="comments-image-box col-md-2">
+                    <img class="post-image image-responsive" src="{{image}}" alt="">
+                </div>
+                <div class="col-md-10">
+                    <h3>{{postedBy}} {{postedOn}}</h3>
+                    <div class="comments-content">
+                        <span>
+                    {{content}}
+                </span>
+                    </div>
+                </div>
+            </div>
+            {{/comments}}
+            <h1>Leave a Reply</h1>
+            <form id="leave-reply">
+                <div class="form-group">
+                    <input type="text" id="leave-reply-email" class="form-control" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="leave-reply-email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea name="leave-reply" placeholder="Leave a reply" id="leave-reply-text" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <button type="submit" id="leave-reply-submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>

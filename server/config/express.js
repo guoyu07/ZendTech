@@ -4,8 +4,8 @@ const express = require('express'),
     bodyParser = require('body-parser');
 
 module.exports = (app, constants) => {
-    app.set("view engine", "pug");
-    app.set("views", constants.rootPath + "/server/views/");
+    // app.set("view engine", "pug");
+    // app.set("views", constants.rootPath + "/server/views/");
 
     app.use(express.static(constants.rootPath + "/public"));
     //app.use("/static", express.static("public"));

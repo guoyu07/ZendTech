@@ -1,0 +1,31 @@
+@import '../variables';
+nav {
+    font-family: 'Kreon';
+    margin-bottom: 0;
+    .nav-link {
+        font-size: 1.22em;
+        color: black;
+    }
+    .nav-link:hover {
+        background-color: white !important;
+        color: $blue;
+        font-weight: 600;
+    }
+    .navbar-brand {
+        margin-left: 30px;
+        img {
+            height: 100px;
+            margin-left: 15px;
+            padding-bottom: 10px;
+        }
+    }
+    .social-icons {
+        color: $god-damn-light-gray;
+        float: right;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .social-icons:hover {
+        color: $blue;
+    }
+}

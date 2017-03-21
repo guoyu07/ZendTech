@@ -1,0 +1,28 @@
+@import '../variables';
+@import '../mixins/no-idea';
+footer {
+    border-top: 1px solid $light-gray;
+    background-color: $footer;
+    color: $gray;
+    font-family: 'Kreon';
+    .container {
+        @include side-margins(50px, 50px);
+        ul {
+            list-style-type: none;
+            li a p {
+                line-height: 1.4;
+            }
+        }
+        .bullet-type {
+            list-style-type: disc;
+        }
+        .logo-box {
+            img {
+                height: 60px;
+            }
+        }
+        .footer-element {
+            @include top-down-margins(15px, 100px);
+        }
+    }
+}

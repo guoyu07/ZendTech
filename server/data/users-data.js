@@ -4,12 +4,14 @@ const encryption = require('../utilities/encryption');
 
 module.exports = function(User) {
     function create(options) {
-        const salt = encryption.generateSalt();
-        const hashPass = encryption.generateHashedPassword(salt, options.password);
+        // let salt = encryption.generateSalt();
+        // let hashPass = encryption.generateHashedPassword(salt, options.password);
 
         let user = new User({
             username: options.username,
             password: options.password,
+            // salt: salt,
+            // hashPass: hashPass,
             email: options.email,
             avatar: options.avatar,
         });
@@ -19,7 +21,7 @@ module.exports = function(User) {
                 if (err) {
                     return reject(err);
                 }
-                
+
                 return resolve(user);
             })
         })
@@ -34,6 +36,18 @@ module.exports = function(User) {
                 return resolve(user);
             });
         })
+    }
+
+    function findByUsername(username) {
+        return new Promise((resolve, reject) => {
+            User.find({ username }, (err, user) => {
+                if (err) {
+                    return reject(err);
+                }
+
+                return resolve(user);
+            });
+        });
     }
 
     function all() {
@@ -51,6 +65,7 @@ module.exports = function(User) {
     return {
         create,
         getById,
+        findByUsername,
         all
     }
 

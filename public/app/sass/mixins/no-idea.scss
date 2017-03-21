@@ -1,0 +1,24 @@
+@mixin side-padding($pixels) {
+    padding-left: $pixels;
+    padding-right: $pixels;
+}
+
+@mixin side-margins($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin top-down-margins($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin shadow() {
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $light-gray;
+    -webkit-box-shadow: 4px 6px 4px -4px $gray;
+    -moz-box-shadow: 4px 6px 4px -4px $gray;
+    box-shadow: 4px 6px 4px -4px $gray;
+}

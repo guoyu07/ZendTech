@@ -1,0 +1,16 @@
+@import '../variables';
+.home-carousel {
+    .car-wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+.carousel {
+    .item {
+        height: 300px;
+        h3 {
+            color: $god-damn-light-gray;
+        }
+    }
+}

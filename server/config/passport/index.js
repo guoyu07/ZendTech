@@ -14,7 +14,7 @@ module.exports = app => {
     });
 
     passport.deserializeUser((userId, done) => {
-        data.userData.getUserById(userId)
+        data.userData.getById(userId)
             .then(user => done(null, user || false))
             .catch(error => done(error, false));
     });

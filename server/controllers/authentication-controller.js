@@ -7,6 +7,8 @@ module.exports = function(data) {
             let user = {
                 username: req.body.username,
                 password: req.body.password,
+                // salt: req.body.salt,
+                // hashPass: req.body.hashPass,
                 email: req.body.email,
                 avatar: req.body.avatar,
             }
@@ -22,7 +24,7 @@ module.exports = function(data) {
                     return;
                 }
                 if (!user) {
-                    res.status(500).err('Invalid name or password!');
+                    res.status(500).json('Invalid name or password!');
                 }
                 req.login(user, error => {
                     if (error) {
