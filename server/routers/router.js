@@ -8,6 +8,7 @@ module.exports = function({ app, controller }) {
     router
         .get('/blogs', controller.blogController.getAll)
         .get('/blogs/:id', controller.blogController.getById)
+        .post('/blogs/:id', controller.blogController.addComment)
         .get('/users', controller.userController.getAll)
         .get('/users/:id', controller.userController.getById)
         .post('/blogs', controller.blogController.create)

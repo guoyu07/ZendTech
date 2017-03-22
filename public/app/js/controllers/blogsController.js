@@ -2,6 +2,7 @@
 import 'jquery';
 import 'amaran';
 import templates from '../../../helpers/templates.js';
+import notifier from '../../../helpers/notifier.js';
 import data from '../data/blogs-data.js';
 
 export default {
@@ -18,9 +19,9 @@ export default {
             .then(function([blogs, template]) {
                 let homePageBlogs = [];
                 console.log(blogs);
-                homePageBlogs.push(blogs[0]);
-                homePageBlogs.push(blogs[1]);
-                homePageBlogs.push(blogs[2]);
+                homePageBlogs.push(blogs[3]);
+                homePageBlogs.push(blogs[3]);
+                homePageBlogs.push(blogs[3]);
                 context.$element().html(template({
                     blogs: homePageBlogs,
                     fromTheBlog: blogs
@@ -30,8 +31,21 @@ export default {
     byId: function(context) {
         let id = context.params['id'];
         Promise.all([data.byId(id), templates.load('blog')])
-            .then(function([blog, template]) {
-                context.$element().html(template(blog.blog));
+            .then(function([blogRes, template]) {
+                let user = localStorage.getItem('user');
+                let newUser = JSON.parse(user);
+                let length = blogRes.blog.comments.length - 1;
+                let blog = blogRes.blog;
+                context.$element().html(template(blog));
+                $('#leave-reply-submit').on('click', function(ev) {
+                    ev.preventDefault();
+                    let comment = {
+                        content: $('#leave-reply-text').val(),
+                        postedBy: newUser.username || 'Stranger',
+                    }
+                    data.addComment(id, comment);
+                    location.reload(true);
+                })
             })
     },
     post: function(context) {
@@ -42,6 +56,8 @@ export default {
                 $('#btn-create-post').on('click', function(ev) {
                     let $this = $(this);
                     let $form = $('create-form');
+                    let user = localStorage.getItem('user');
+                    let newUser = JSON.parse(user);
 
                     let post = {
                         title: $('#title').val(),
@@ -49,7 +65,7 @@ export default {
                         image: $('#image').val(),
                         videoUrl: $('#videoUrl').val(),
                         article: $('#article').val(),
-                        postedBy: 'Robert Gravis'
+                        postedBy: newUser.username
 
                     }
 

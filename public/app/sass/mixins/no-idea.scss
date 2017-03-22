@@ -1,6 +1,12 @@
-@mixin side-padding($pixels) {
-    padding-left: $pixels;
-    padding-right: $pixels;
+@mixin blur() {
+    -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    box-shadow: inset 0 8px 65px -6px #FCFCFC;
+}
+
+@mixin border() {
+    border: 5px solid white;
+    outline: 1px solid $gray;
 }
 
 @mixin side-margins($left, $right) {
@@ -21,4 +27,9 @@
     -webkit-box-shadow: 4px 6px 4px -4px $gray;
     -moz-box-shadow: 4px 6px 4px -4px $gray;
     box-shadow: 4px 6px 4px -4px $gray;
+}
+
+@mixin reset() {
+    margin: 0 !important;
+    padding: 0 !important;
 }

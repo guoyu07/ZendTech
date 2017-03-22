@@ -53,9 +53,21 @@ module.exports = function(BlogPost) {
         });
     }
 
+    function addComment(id, comment) {
+        return new Promise((resolve, reject) => {
+            BlogPost.findOne({ _id: id })
+                .then(blog => {
+                    blog.comments.push(comment);
+                    blog.save();
+                    return resolve(blog);
+                });
+        }).catch((err) => reject(err));
+    }
+
     return {
         create,
         getById,
-        all
+        all,
+        addComment
     }
 }

@@ -35,8 +35,10 @@ let blogPostSchema = mongoose.Schema({
     },
     comments: [{
         postedBy: String,
-        postedOn: String,
-        image: String,
+        postedOn: {
+            type: String,
+            default: dateFormat("fullDate")
+        },
         content: String,
         // required: requiredMessage
     }]

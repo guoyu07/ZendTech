@@ -128,31 +128,29 @@
             <h1>{{comments.length}} Comments</h1>
             {{#comments}}
             <div class="comment-box row">
-                <div class="comments-image-box col-md-2">
-                    <img class="post-image image-responsive" src="{{image}}" alt="">
-                </div>
-                <div class="col-md-10">
-                    <h3>{{postedBy}} {{postedOn}}</h3>
-                    <div class="comments-content">
-                        <span>
-                    {{content}}
-                </span>
+                <div class="content-wrapper col-md-12">
+                    <div class="comments-image-box col-md-2">
+                        <img class="comment-image image-responsive" src="http://gazettereview.com/wp-content/uploads/2017/01/snoop-dogg.jpg" alt="">
+                    </div>
+                    <div class="col-md-9 comment-text">
+                        <h3>{{postedBy}} {{postedOn}}</h3>
+                        <div class="comments-content">
+                            <p>{{content}}</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
             {{/comments}}
             <h1>Leave a Reply</h1>
             <form id="leave-reply">
-                <div class="form-group">
-                    <input type="text" id="leave-reply-email" class="form-control" placeholder="Title">
-                </div>
                 <div class="form-group">
                     <input type="text" id="leave-reply-email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <textarea name="leave-reply" placeholder="Leave a reply" id="leave-reply-text" cols="30" rows="10" class="form-control"></textarea>
                 </div>
-                <button type="submit" id="leave-reply-submit" class="btn btn-primary">Send</button>
+                <button type="submit" id="leave-reply-submit" class="btn btn-default">Send</button>
             </form>
         </div>
     </div>

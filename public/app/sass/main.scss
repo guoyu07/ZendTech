@@ -5,6 +5,7 @@
 @import './partials/nav';
 @import './partials/carousel';
 @import './partials/jumbotron';
+@import './partials/breadcrumb';
 @import './mixins/no-idea';
 @font-face {
     font-family: 'Kreon';
@@ -33,16 +34,12 @@ body {
             color: $blue;
         }
         .post-image {
-            display: block;
-            min-height: 200px;
-            max-height: 100%;
-            max-width: 100%;
+            height: 100%;
+            width: 100%;
         }
     }
     .post-box {
-        width: 100%;
-        height: 50%;
-        @include shadow();
+        @include border();
     }
 }
 
@@ -77,9 +74,7 @@ aside {
 
 .jumbotron-single-post {
     .single-post {
-        -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-        -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-        box-shadow: inset 0 8px 65px -6px #FCFCFC;
+        @include blur();
     }
 }
 
@@ -147,4 +142,46 @@ aside {
 
 .comments-wrapper {
     margin-left: 30px;
+    margin-top: 30px;
+    .comment-box {
+        @include blur();
+        @include reset();
+        border: 1px solid $god-damn-light-gray;
+    }
+    .content-wrapper {
+        @include reset();
+    }
+    .comments-image-box {
+        @include reset();
+        height: 100px;
+        .comment-image {
+            @include border();
+            margin-top: 15px;
+            margin-left: 15px;
+            height: 100%;
+        }
+    }
+    .comment-text {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 30px;
+        p {
+            line-height: 1.4;
+        }
+    }
+    #leave-reply-email,
+    #leave-reply-text {
+        @include blur();
+        border-radius: 0;
+        padding: 20px;
+    }
+    #leave-reply-submit {
+        margin-left: 0px;
+        float: right;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
 }
