@@ -20,8 +20,9 @@ export default {
                 let homePageBlogs = [];
                 console.log(blogs);
                 homePageBlogs.push(blogs[3]);
-                homePageBlogs.push(blogs[3]);
-                homePageBlogs.push(blogs[3]);
+                homePageBlogs.push(blogs[2]);
+                homePageBlogs.push(blogs[7]);
+
                 context.$element().html(template({
                     blogs: homePageBlogs,
                     fromTheBlog: blogs

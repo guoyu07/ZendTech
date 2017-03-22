@@ -136,8 +136,7 @@ body {
   .posts .post-item a:hover {
     color: #76A0AA; }
   .posts .post-item .post-image {
-    height: 100%;
-    width: 100%; }
+    max-width: 100%; }
 .posts .post-box {
   border: 5px solid white;
   outline: 1px solid #929292; }

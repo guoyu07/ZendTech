@@ -28,11 +28,12 @@ export default {
                         email: email
                     }
                     data.register(user).then(user => {
-                        console.log(user);
+                        $('#register').hide();
+                        $('#logout').show();
                         notifier.send(`${user.username} registered!`);
 
                         context.redirect('#/home');
-                        data.login(user);
+                        location.reload(true);
                     });
                 });
             });
@@ -50,6 +51,9 @@ export default {
 
                     data.login(userInfo)
                         .then(user => {
+                            $('#login').hide();
+                            $('#register').hide();
+                            $('#logout').show();
                             localStorage.setItem('user', JSON.stringify(user));
                             notifier.send(`${user.username} logged in!`);
                             notifier.explain('Welcome!', 'Now you can leave comments!', 'ok');
@@ -63,6 +67,7 @@ export default {
             notifier.send('You logged out');
             context.redirect('#/home');
             localStorage.clear();
+            location.reload(true);
         });
 
     }
