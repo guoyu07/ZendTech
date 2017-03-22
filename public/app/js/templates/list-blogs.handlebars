@@ -1,12 +1,12 @@
 <section class="posts row">
     {{#blogs}}
-    <div class="post-item col-md-3">
-        <div class="text-center">
-            <h3><a href="#/blog/{{_id}}">{{title}}</a></h3>
+        <div class="post-item">
+            <div>
+                <h3><a href="#/blog/{{_id}}">{{title}}</a></h3>
+            </div>
+            <div class="post-box">
+                <a href="#.blog/{{_id}}"><img class="post-image image-responsive" src="{{image}}" alt="{{title}}"></a>
+            </div>
         </div>
-        <div class="box">
-            <img class="post-image image-responsive" src="{{image}}" alt="{{title}}">
-        </div>
-    </div>
     {{/blogs}}
 </section>

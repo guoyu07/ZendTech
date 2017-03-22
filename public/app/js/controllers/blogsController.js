@@ -9,6 +9,7 @@ export default {
     all: function(context) {
         Promise.all([data.all(), templates.load('list-blogs')])
             .then(function([blogs, template]) {
+                console.log(blogs);
                 context.$element().html(template({
                     blogs: blogs
                 }));
@@ -20,8 +21,8 @@ export default {
                 let homePageBlogs = [];
                 console.log(blogs);
                 homePageBlogs.push(blogs[3]);
-                homePageBlogs.push(blogs[2]);
-                homePageBlogs.push(blogs[7]);
+                homePageBlogs.push(blogs[3]);
+                homePageBlogs.push(blogs[3]);
 
                 context.$element().html(template({
                     blogs: homePageBlogs,

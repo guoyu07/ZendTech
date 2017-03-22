@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="app/css/main.css">
     <title>Tech Blog</title>
+
 </head>
 
 <body>
+    <div class="loader">
+    </div>
     <header>
         <nav id="top-nav" class="navbar navbar-primary">
             <div class="container-fluid">
@@ -48,7 +51,7 @@
                         <li><a class="nav-link" href="#/categories">Categories</a></li>
                         <li><a class="nav-link" id="register" href="#/register">Register</a></li>
                         <li><a class="nav-link" id="login" href="#/login">Log in</a></li>
-                        <li><a class="nav-link" id="logout" href="#/logout" style="display:none">Log out</a></li>
+                        <li><a class="nav-link" id="logout" href="#/home" style="display:none">Log out</a></li>
 
                     </ul>
                 </div>
@@ -56,6 +59,7 @@
             <!-- /.container-fluid -->
         </nav>
     </header>
+
     <div id="content">
 
     </div>
@@ -97,7 +101,7 @@
                     </div>
                     <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6 footer-element first-footer-element">
                         <h3> Archives </h3>
-                        <ul>
+                        <ul class="bullet-type">
                             <li>
                                 <a href="#/blog/Snowboard tricks">
                                     <p>Snowboard tricks</p>
@@ -205,5 +209,6 @@
         System.import('main');
     </script>
 </body>
+
 
 </html>

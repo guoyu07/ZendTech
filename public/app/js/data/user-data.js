@@ -16,6 +16,9 @@ export default {
             });
     },
     logout: function() {
-        return requester.post('/logout');
+        return requester.post('/logout')
+            .then(resp => {
+                console.log(resp);
+            });
     }
 }

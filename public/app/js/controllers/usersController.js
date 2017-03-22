@@ -61,15 +61,6 @@ export default {
                         });
                 });
             });
-    },
-    logout: function(context) {
-        $('#logout').on('click', function() {
-            notifier.send('You logged out');
-            context.redirect('#/home');
-            localStorage.clear();
-            location.reload(true);
-        });
-
     }
 
 }
