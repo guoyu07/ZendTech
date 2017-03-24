@@ -1,20 +1,24 @@
-<ol class="breadcrumb">
+<ol class="breadcrumb hidden-xs">
     <li><a href="#/home">Home</a></li>
     <li><a href="#/blogs">Blog</a></li>
     <li class="active">{{title}}</li>
 </ol>
 <section class="posts">
-    <div class="jumbotron jumbotron-single-post">
+    <div class="jumbotron jumbotron-single-post hidden-xs">
         <div class="container single-post">
             <h1 class="text-center">{{title}}</h1>
             <p class="text-center">Posted by {{postedBy}} on {{postedOn}} in {{category}}</p>
         </div>
     </div>
     <div class="post-page row">
-        <div class="col-md-9 post-wrapper">
+        <div class="col-md-9 col-xs-12 post-wrapper">
             <div class="text-justify jumbotron jumbotron-post-header">
                 <div class="container post-header">
-                    <span>Posted by <strong>{{postedBy}}</strong> on <strong>{{postedOn}}</strong> | {{comments.length}} Comments</span>
+                    {{#if comments.length}} 
+                        <span>Posted by <strong>{{postedBy}}</strong> on <strong>{{postedOn}}</strong>  |  {{comments.length}} Comments</span>
+                    {{else}}
+                        <span>Posted by <strong>{{postedBy}}</strong> on <strong>{{postedOn}}</strong>  |  0 Comments</span>
+                    {{/if}}
                 </div>
             </div>
             <div class="post-article row">
@@ -25,7 +29,7 @@
                 </div>
                 <div class="article row">
                     <div class="col-md-11">
-                        <p>{{article}}</p>
+                        <p class="article-text">{{article}}</p>
                     </div>
                 </div>
                 <div class="row video-wrapper">
@@ -35,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 side-menu-wrapper">
+        <div class="col-md-3 side-menu-wrapper hidden-xs hidden-sm">
             <h3>From the Blog</h3>
             <ul>
                 <li>
@@ -125,11 +129,13 @@
 
     <div class="row">
         <div class="comments-wrapper col-md-8">
+
             <h1>{{comments.length}} Comments</h1>
-            {{#comments}}
+
+            {{#if comments}} {{#comments}}
             <div class="comment-box row">
                 <div class="content-wrapper col-md-12">
-                    <div class="comments-image-box col-md-2">
+                    <div class="comments-image-box col-md-3">
                         <img class="comment-image image-responsive" src="http://gazettereview.com/wp-content/uploads/2017/01/snoop-dogg.jpg" alt="">
                     </div>
                     <div class="col-md-9 comment-text">
@@ -139,9 +145,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            {{/comments}}
+            {{/comments}} {{else}}
+            <h1>This article has no comments yet</h1>
+            {{/if}}
             <h1>Leave a Reply</h1>
             <form id="leave-reply">
                 <div class="form-group">

@@ -1,8 +1,14 @@
 @import '../variables';
+@import '../mixins/no-idea';
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .home-carousel {
     .car-wrapper {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: -15px !important;
+        padding-right: -15px !important;
     }
 }
 
@@ -16,6 +22,7 @@
 }
 
 .posts {
+    margin-bottom: 10%;
     .post-item {
         @include side-margins(50px, 50px);
         width: 25%;
@@ -27,13 +34,9 @@
         }
         .post-image {
             max-width: 100%;
-            // max-height: 100%;
         }
     }
     .post-box {
-        // width: 225px;
-        // height: 225px;
-        // text-align: center;
         @include border();
     }
 }
@@ -42,7 +45,7 @@ aside {
     margin-top: 15px;
     .home-aside-links {
         .blog-links {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             width: 45%;
         }
         z-index: 5;

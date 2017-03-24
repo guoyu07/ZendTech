@@ -9,9 +9,83 @@
     outline: 1px solid $gray;
 }
 
+@mixin little-screen-home-post {
+    @include side-margins(2%, 2%);
+    width: 96%;
+    z-index: 0;
+    margin-bottom: 25px;
+    .post-image {
+        max-width: 100%;
+    }
+}
+
+@mixin little-screen-blog() {
+    .blog-page-posts {
+        @include side-margins(0px, 0px);
+        width: 100%;
+        .blog-page-post-item {
+            @include side-margins(2%, 2%);
+            margin-bottom: 10px;
+            width: 96%;
+        }
+    }
+}
+
+@mixin blog-post-page() {
+    section.posts {
+        margin: 0;
+        padding: 0;
+        .post-page {
+            margin-left: 0px;
+        }
+        .post-article {
+            width: 100%;
+        }
+        .post-wrapper {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .pain-in-the-ass,
+        .video-wrapper,
+        .comments-wrapper {
+            @include side-margins(1%, 1%);
+        }
+        .article {
+            @include side-margins(1%, 1%);
+            @include side-padding(1%, 1%);
+            div {
+                @include side-padding(0px, 0px);
+            }
+        }
+    }
+}
+
+@mixin reset-side-margins() {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@mixin form-styles() {
+    @include side-margins(5px, 5px);
+    input {
+        border-radius: 0px;
+        @include blur();
+    }
+    button {
+        border-radius: 0px;
+        color: $light-gray;
+        background-color: $blue;
+    }
+}
+
 @mixin side-margins($left, $right) {
     margin-left: $left;
     margin-right: $right;
+}
+
+@mixin side-padding($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
 }
 
 @mixin top-down-margins($top, $bottom) {

@@ -1,5 +1,7 @@
 @import '../variables';
+@import '../mixins/no-idea';
 nav {
+    @include blur();
     font-family: 'Kreon';
     margin-bottom: 0;
     .nav-link {
@@ -19,15 +21,22 @@ nav {
         margin-left: 30px;
         img {
             height: 100px;
-            margin-left: 15px;
+            margin-left: 5%;
             padding-bottom: 10px;
         }
+    }
+    .my-nav-links {
+        margin-top: 20px;
+    }
+    .social-media {
+        margin-top: 5px;
     }
     .social-icons {
         color: $god-damn-light-gray;
         float: right;
-        padding: 10px;
-        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 30px;
     }
     .social-icons:hover {
         color: $blue;

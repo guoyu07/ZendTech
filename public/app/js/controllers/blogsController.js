@@ -21,8 +21,8 @@ export default {
                 let homePageBlogs = [];
                 console.log(blogs);
                 homePageBlogs.push(blogs[3]);
-                homePageBlogs.push(blogs[3]);
-                homePageBlogs.push(blogs[3]);
+                homePageBlogs.push(blogs[6]);
+                homePageBlogs.push(blogs[1]);
 
                 context.$element().html(template({
                     blogs: homePageBlogs,
@@ -33,12 +33,12 @@ export default {
     byId: function(context) {
         let id = context.params['id'];
         Promise.all([data.byId(id), templates.load('blog')])
-            .then(function([blogRes, template]) {
+            .then(function([blog, template]) {
                 let user = localStorage.getItem('user');
                 let newUser = JSON.parse(user);
-                let length = blogRes.blog.comments.length - 1;
-                let blog = blogRes.blog;
-                context.$element().html(template(blog));
+
+                console.log(blog.blog.comments);
+                context.$element().html(template(blog.blog));
                 $('#leave-reply-submit').on('click', function(ev) {
                     ev.preventDefault();
                     let comment = {
@@ -51,7 +51,7 @@ export default {
             })
     },
     post: function(context) {
-        templates.load('blog-post')
+        templates.load('blog-create')
             .then(template => {
                 context.$element().html(template());
 

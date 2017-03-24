@@ -1,0 +1,120 @@
+@import '../mixins/no-idea';
+@import '../variables';
+.jumbotron-single-post {
+    .single-post {
+        @include blur();
+    }
+}
+
+.jumbotron-post-header {
+    padding: 0;
+    margin: 0;
+    .post-header {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+.post-page {
+    margin-left: 15px;
+}
+
+.post-article {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    .article {
+        div {
+            margin-top: 15px;
+        }
+        p {
+            line-height: 1.9;
+            text-align: justify;
+        }
+    }
+    .pain-in-the-ass {
+        padding: 0;
+    }
+    .post-image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.video-wrapper {
+    margin: 0;
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.side-menu-wrapper {
+    ul li a p {
+        line-height: 1.4;
+    }
+    ul {
+        margin-bottom: 50px;
+    }
+}
+
+.comments-wrapper {
+    margin-left: 30px;
+    margin-top: 30px;
+    .comment-box {
+        @include blur();
+        @include reset();
+        border: 1px solid $god-damn-light-gray;
+    }
+    .content-wrapper {
+        @include reset();
+    }
+    .comments-image-box {
+        @include reset();
+        height: 100px;
+        .comment-image {
+            @include border();
+            margin-top: 15px;
+            margin-left: 15px;
+            height: 100%;
+        }
+    }
+    .comment-text {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 30px;
+        h3 {
+            padding-top: 10px;
+        }
+        p {
+            padding-right: 30px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+    }
+    #leave-reply-email,
+    #leave-reply-text {
+        @include blur();
+        border-radius: 0;
+        padding: 20px;
+    }
+    #leave-reply-submit {
+        margin-left: 0px;
+        float: right;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}

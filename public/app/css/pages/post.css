@@ -1,0 +1,100 @@
+.jumbotron-single-post .single-post {
+  -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+  -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+  box-shadow: inset 0 8px 65px -6px #FCFCFC; }
+
+.jumbotron-post-header {
+  padding: 0;
+  margin: 0; }
+  .jumbotron-post-header .post-header {
+    margin-left: 0;
+    padding: 15px; }
+
+.post-page {
+  margin-left: 15px; }
+
+.post-article {
+  margin-top: 15px;
+  margin-left: 0;
+  margin-right: 0; }
+  .post-article .article div {
+    margin-top: 15px; }
+  .post-article .article p {
+    line-height: 1.9;
+    text-align: justify; }
+  .post-article .pain-in-the-ass {
+    padding: 0; }
+  .post-article .post-image {
+    height: 100%;
+    width: 100%; }
+
+.video-wrapper {
+  margin: 0; }
+  .video-wrapper .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0; }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.side-menu-wrapper ul li a p {
+  line-height: 1.4; }
+.side-menu-wrapper ul {
+  margin-bottom: 50px; }
+
+.comments-wrapper {
+  margin-left: 30px;
+  margin-top: 30px; }
+  .comments-wrapper .comment-box {
+    -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid #E3E3E3; }
+  .comments-wrapper .content-wrapper {
+    margin: 0 !important;
+    padding: 0 !important; }
+  .comments-wrapper .comments-image-box {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100px; }
+    .comments-wrapper .comments-image-box .comment-image {
+      border: 5px solid white;
+      outline: 1px solid #929292;
+      margin-top: 15px;
+      margin-left: 15px;
+      height: 100%; }
+  .comments-wrapper .comment-text {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 30px; }
+    .comments-wrapper .comment-text h3 {
+      padding-top: 10px; }
+    .comments-wrapper .comment-text p {
+      padding-right: 30px;
+      line-height: 1.4;
+      text-align: justify; }
+  .comments-wrapper #leave-reply-email,
+  .comments-wrapper #leave-reply-text {
+    -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    border-radius: 0;
+    padding: 20px; }
+  .comments-wrapper #leave-reply-submit {
+    margin-left: 0px;
+    float: right;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px; }
+
+/*# sourceMappingURL=post.css.map */

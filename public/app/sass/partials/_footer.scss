@@ -21,8 +21,8 @@ footer {
                 height: 60px;
             }
         }
-        .footer-element {
-            @include top-down-margins(15px, 100px);
-        }
+        // .footer-element {
+        //     @include top-down-margins(15px, 100px);
+        // }
     }
 }

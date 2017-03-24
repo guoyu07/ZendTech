@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/AmaranJS/dist/css/amaran.min.css">
@@ -17,49 +17,50 @@
     <div class="loader">
     </div>
     <header>
-        <nav id="top-nav" class="navbar navbar-primary">
+        <nav id="top-nav" class="navbar navbar-primary navbar-static-top">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <img src="/assets/logo.png">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <img id="logo" src="/assets/logo.png">
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <div class="form-group social-media">
+                <div class="collapse navbar-collapse main-nav navbar-right" id="bs-example-navbar-collapse-1">
+                    <div class="form-group social-media hidden-xs">
                         <a class="social-icons" href="facebook.com">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
                         </a>
                         <a class="social-icons" href="twitter.com">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
                         </a>
                         <a class="social-icons" href="youtube.com">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <i class="fa fa-youtube-square" aria-hidden="true"></i>
                         </a>
                         <a class="social-icons" href="github.com">
-                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <i class="fa fa-github-square" aria-hidden="true"></i>
                         </a>
                         <a class="social-icons" href="9gag.com">
-                            <i class="fa fa-rss" aria-hidden="true"></i>
+                            <i class="fa fa-rss-square" aria-hidden="true"></i>
                         </a>
                         <a class="social-icons" href="9gag.com">
-                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
                         </a>
                     </div>
                     <ul class="nav navbar-nav my-nav-links text-muted">
                         <li><a class="nav-link" href="#/home">Home</a></li>
                         <li><a class="nav-link" href="#/blogs">Blog</a></li>
-                        <li><a class="nav-link" href="#/categories">Categories</a></li>
+                        <li><a class="nav-link" href="#/blogs/add">Create post</a></li>
                         <li><a class="nav-link" id="register" href="#/register">Register</a></li>
                         <li><a class="nav-link" id="login" href="#/login">Log in</a></li>
                         <li><a class="nav-link" id="logout" href="#/home" style="display:none">Log out</a></li>
 
                     </ul>
                 </div>
-            </div>
-            <!-- /.container-fluid -->
+                <!-- /.container-fluid -->
         </nav>
     </header>
-
     <div id="content">
 
     </div>
@@ -67,7 +68,7 @@
         <div class="footer" id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6 footer-element zero-footer-element">
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6 footer-element zero-footer-element">
                         <div class="logo-box">
                             <img src="./assets/logo.png" class="img-responsive footer-logo" alt="Logo">
                         </div>
@@ -99,7 +100,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6 footer-element first-footer-element">
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6 footer-element first-footer-element">
                         <h3> Archives </h3>
                         <ul class="bullet-type">
                             <li>
@@ -129,7 +130,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6 footer-element">
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6 footer-element second-footer-element">
                         <h3> Recent Post </h3>
                         <ul>
                             <li>
@@ -159,7 +160,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6 footer-element">
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6 footer-element third-footer-element">
                         <h3> FAQ's </h3>
                         <ul class="bullet-type">
                             <li>
@@ -189,6 +190,26 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="form-group social-media-footer hidden-xs hidden-md hidden-lg">
+                        <a class="social-icons" href="facebook.com">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a class="social-icons" href="twitter.com">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a class="social-icons" href="youtube.com">
+                            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                        </a>
+                        <a class="social-icons" href="github.com">
+                            <i class="fa fa-github-square" aria-hidden="true"></i>
+                        </a>
+                        <a class="social-icons" href="9gag.com">
+                            <i class="fa fa-rss-square" aria-hidden="true"></i>
+                        </a>
+                        <a class="social-icons" href="9gag.com">
+                            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
                 <!--/.row-->
             </div>
@@ -196,7 +217,6 @@
         </div>
         <!--/.footer-->
     </footer>
-
     <!-- Libs -->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/handlebars/handlebars.min.js"></script>

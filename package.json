@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
     "chai": "^3.5.0",
     "eslint": "^3.18.0",
     "eslint-config-defaults": "^9.0.0",
@@ -40,11 +41,14 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-eslint": "^3.0.1",
     "gulp-html": "^0.4.5",
+    "gulp-jshint": "^2.0.4",
     "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.1",
+    "gulp-watch": "^4.3.11",
     "mocha": "^3.2.0",
     "sinon": "^1.17.6"
   }
