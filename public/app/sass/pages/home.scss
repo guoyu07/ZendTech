@@ -14,7 +14,7 @@
 
 .carousel {
     .item {
-        height: 300px;
+        height: 454px;
         h3 {
             color: $god-damn-light-gray;
         }
@@ -22,11 +22,14 @@
 }
 
 .posts {
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     .post-item {
-        @include side-margins(3.7%, 3%);
+        .post-title {
+            position: relative;
+            z-index: 5;
+        }
+        @include side-margins(3.89%, 3%);
         width: 26%;
-        z-index: 0;
         margin-bottom: 2%;
         display: inline-block;
         a:hover {
@@ -37,15 +40,15 @@
         }
     }
     .post-box {
-        @include border();
+        @include border(5px);
     }
 }
 
 aside {
     margin-top: 1.112%;
     .home-aside-links {
+        margin-bottom: 5%;
         .blog-links {
-            margin-bottom: 2.4%;
             width: 45%;
         }
         z-index: 5;
@@ -63,7 +66,7 @@ aside {
             @include shadow();
         }
         iframe {
-            margin: 20px 30px 20px 30px;
+            margin: 4.5% 6.7%;
         }
     }
 }

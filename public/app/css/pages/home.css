@@ -7,19 +7,21 @@
   padding-right: -15px !important; }
 
 .carousel .item {
-  height: 300px; }
+  height: 454px; }
   .carousel .item h3 {
     color: #E3E3E3; }
 
 .posts {
-  margin-bottom: 10%; }
+  margin-bottom: 2%; }
   .posts .post-item {
-    margin-left: 3.7%;
+    margin-left: 3.89%;
     margin-right: 3%;
     width: 26%;
-    z-index: 0;
     margin-bottom: 2%;
     display: inline-block; }
+    .posts .post-item .post-title {
+      position: relative;
+      z-index: 5; }
     .posts .post-item a:hover {
       color: #76A0AA; }
     .posts .post-item .post-image {
@@ -31,11 +33,11 @@
 aside {
   margin-top: 1.112%; }
   aside .home-aside-links {
+    margin-bottom: 5%;
     z-index: 5;
     margin-left: 3.7%;
     margin-right: 3.7%; }
     aside .home-aside-links .blog-links {
-      margin-bottom: 2.4%;
       width: 45%; }
     aside .home-aside-links ul {
       width: 30%;
@@ -47,11 +49,11 @@ aside {
     box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
-    border-color: #EBEBEB;
+    border-color: #fbfbfb;
     -webkit-box-shadow: 4px 6px 4px -4px #929292;
     -moz-box-shadow: 4px 6px 4px -4px #929292;
     box-shadow: 4px 6px 4px -4px #929292; }
   aside .home-video iframe {
-    margin: 20px 30px 20px 30px; }
+    margin: 4.5% 6.7%; }
 
 /*# sourceMappingURL=home.css.map */

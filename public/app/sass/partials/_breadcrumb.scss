@@ -1,4 +1,7 @@
 .breadcrumb {
+    margin-top: 1%;
+    margin-bottom: 2.7%;
+    margin-left: 2.2%;
     background: rgba(255, 255, 255, 1);
     border: 0px solid rgba(255, 255, 255, 1);
     border-radius: 4px;
@@ -17,6 +20,6 @@
     }
     li+li:before {
         color: rgba(163, 163, 163, 1);
-        content: "\003E\00a0";
+        content: "\003E\003E\00a0";
     }
 }

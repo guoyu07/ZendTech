@@ -1,7 +1,12 @@
 .jumbotron-single-post .single-post {
   -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
   -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-  box-shadow: inset 0 8px 65px -6px #FCFCFC; }
+  box-shadow: inset 0 8px 65px -6px #FCFCFC;
+  -moz-box-shadow: inset 0 -8px 65px 6px #FCFCFC;
+  -webkit-box-shadow: inset 0 -8px 65px 6px #FCFCFC;
+  box-shadow: inset 0 -8px 65px 6px #FCFCFC;
+  margin-left: 2.5%;
+  margin-right: 2.5%; }
 
 .jumbotron-post-header {
   padding: 0;
@@ -51,12 +56,22 @@
 .comments-wrapper {
   margin-left: 2.23%;
   margin-top: 2.23%; }
+  .comments-wrapper h1 {
+    margin-bottom: 3.23%; }
+  .comments-wrapper .date-wrapper {
+    margin-top: 15px;
+    margin-right: 15px; }
+    .comments-wrapper .date-wrapper strong {
+      color: #d4d4d4;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004); }
   .comments-wrapper .comment-box {
-    -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-    -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-    box-shadow: inset 0 8px 65px -6px #FCFCFC;
-    margin: 0 !important;
-    padding: 0 !important;
+    -moz-box-shadow: inset 0 8px 65px -6px #fbfbfb;
+    -webkit-box-shadow: inset 0 8px 65px -6px #fbfbfb;
+    box-shadow: inset 0 8px 65px -6px #fbfbfb;
+    -moz-box-shadow: inset 0 -8px 65px 6px #fbfbfb;
+    -webkit-box-shadow: inset 0 -8px 65px 6px #fbfbfb;
+    box-shadow: inset 0 -8px 65px 6px #fbfbfb;
+    margin-bottom: 5%;
     border: 1px solid #E3E3E3; }
   .comments-wrapper .content-wrapper {
     margin: 0 !important;
@@ -66,27 +81,40 @@
     padding: 0 !important;
     height: 100px; }
     .comments-wrapper .comments-image-box .comment-image {
-      border: 5px solid white;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #fbfbfb;
+      -webkit-box-shadow: 4px 6px 4px -4px #929292;
+      -moz-box-shadow: 4px 6px 4px -4px #929292;
+      box-shadow: 4px 6px 4px -4px #929292;
+      border: 8px solid white;
       outline: 1px solid #929292;
-      margin-top: 1.112%;
-      margin-left: 1.112%;
+      margin-top: 15px;
+      margin-left: 15px;
       height: 100%; }
   .comments-wrapper .comment-text {
     padding-left: 0;
     padding-right: 0px;
     margin-left: 3.47%; }
     .comments-wrapper .comment-text h3 {
+      color: #1d1d1d;
       padding-top: 1.6%; }
     .comments-wrapper .comment-text p {
+      color: #929292;
+      margin-top: 1.6%;
       padding-right: 4.7%;
       margin-bottom: 1.54%;
-      line-height: 1.4;
+      line-height: 1.667;
       text-align: justify; }
   .comments-wrapper #leave-reply-email,
   .comments-wrapper #leave-reply-text {
-    -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-    -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-    box-shadow: inset 0 8px 65px -6px #FCFCFC;
+    -moz-box-shadow: inset 0 8px 65px -6px #fbfbfb;
+    -webkit-box-shadow: inset 0 8px 65px -6px #fbfbfb;
+    box-shadow: inset 0 8px 65px -6px #fbfbfb;
+    -moz-box-shadow: inset 0 -8px 65px 6px #fbfbfb;
+    -webkit-box-shadow: inset 0 -8px 65px 6px #fbfbfb;
+    box-shadow: inset 0 -8px 65px 6px #fbfbfb;
     border-radius: 0;
     padding: 2.31%; }
   .comments-wrapper #leave-reply-submit {

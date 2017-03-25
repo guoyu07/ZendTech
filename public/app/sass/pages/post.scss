@@ -2,7 +2,9 @@
 @import '../variables';
 .jumbotron-single-post {
     .single-post {
-        @include blur();
+        @include blur($almost-white);
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 }
 
@@ -71,9 +73,21 @@
 .comments-wrapper {
     margin-left: 2.23%;
     margin-top: 2.23%;
+    h1 {
+        margin-bottom: 3.23%;
+    }
+    .date-wrapper {
+        margin-top: 15px;
+        margin-right: 15px;
+        strong {
+            color: rgb(212, 212, 212);
+            text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+        }
+    }
     .comment-box {
-        @include blur();
-        @include reset();
+        @include blur(#fbfbfb);
+        //@include reset();
+        margin-bottom: 5%;
         border: 1px solid $god-damn-light-gray;
     }
     .content-wrapper {
@@ -83,9 +97,10 @@
         @include reset();
         height: 100px;
         .comment-image {
-            @include border();
-            margin-top: 1.112%;
-            margin-left: 1.112%;
+            @include shadow();
+            @include border(8px);
+            margin-top: 15px;
+            margin-left: 15px;
             height: 100%;
         }
     }
@@ -94,18 +109,22 @@
         padding-right: 0px;
         margin-left: 3.47%;
         h3 {
+            color: rgb(29, 29, 29);
             padding-top: 1.6%;
         }
         p {
+            //font-family: 'DroidSans';
+            color: $gray;
+            margin-top: 1.6%;
             padding-right: 4.7%;
             margin-bottom: 1.54%;
-            line-height: 1.4;
+            line-height: 1.667;
             text-align: justify;
         }
     }
     #leave-reply-email,
     #leave-reply-text {
-        @include blur();
+        @include blur($light-gray);
         border-radius: 0;
         padding: 2.31%;
     }

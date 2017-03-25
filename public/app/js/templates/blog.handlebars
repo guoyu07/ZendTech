@@ -135,11 +135,14 @@
             {{#if comments}} {{#comments}}
             <div class="comment-box row">
                 <div class="content-wrapper col-md-12">
+                    <div class="pull-right date-wrapper">
+                        <strong>{{postedOn}}</strong>
+                    </div>
                     <div class="comments-image-box col-md-3">
                         <img class="comment-image image-responsive" src="http://gazettereview.com/wp-content/uploads/2017/01/snoop-dogg.jpg" alt="">
                     </div>
                     <div class="col-md-9 comment-text">
-                        <h3>{{postedBy}} {{postedOn}}</h3>
+                        <h3>{{postedBy}}</h3>
                         <div class="comments-content">
                             <p>{{content}}</p>
                         </div>

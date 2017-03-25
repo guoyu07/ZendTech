@@ -1,11 +1,15 @@
-@mixin blur() {
-    -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-    -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-    box-shadow: inset 0 8px 65px -6px #FCFCFC;
+@import '../variables';
+@mixin blur($color) {
+    -moz-box-shadow: inset 0 8px 65px -6px $color;
+    -webkit-box-shadow: inset 0 8px 65px -6px $color;
+    box-shadow: inset 0 8px 65px -6px $color;
+    -moz-box-shadow: inset 0 -8px 65px 6px $color;
+    -webkit-box-shadow: inset 0 -8px 65px 6px $color;
+    box-shadow: inset 0 -8px 65px 6px $color;
 }
 
-@mixin border() {
-    border: 5px solid white;
+@mixin border($border) {
+    border: $border solid white;
     outline: 1px solid $gray;
 }
 
@@ -34,6 +38,7 @@
 @mixin blog-post-page() {
     section.posts {
         margin: 0;
+        margin-bottom: 10%;
         padding: 0;
         .post-page {
             margin-left: 0px;
@@ -66,10 +71,14 @@
 }
 
 @mixin form-styles() {
+    margin-top: 5%;
+    margin-bottom: 10%;
     @include side-margins(.375%, .375%);
-    input {
+    input,
+    select,
+    textarea {
         border-radius: 0px;
-        @include blur();
+        @include blur($light-gray);
     }
     button {
         border-radius: 0px;
