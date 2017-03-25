@@ -11,21 +11,21 @@
     margin: 0;
     .post-header {
         margin-left: 0;
-        padding: 15px;
+        padding: 1.112%;
     }
 }
 
 .post-page {
-    margin-left: 15px;
+    margin-left: 1.112%;
 }
 
 .post-article {
-    margin-top: 15px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-top: 1.112%;
     .article {
         div {
-            margin-top: 15px;
+            margin-top: 1.112%;
+            padding-left: 0;
+            padding-right: 0;
         }
         p {
             line-height: 1.9;
@@ -47,7 +47,7 @@
         position: relative;
         padding-bottom: 56.25%;
         /* 16:9 */
-        padding-top: 25px;
+        padding-top: 2.6%;
         height: 0;
     }
     iframe {
@@ -64,13 +64,13 @@
         line-height: 1.4;
     }
     ul {
-        margin-bottom: 50px;
+        margin-bottom: 16.5%;
     }
 }
 
 .comments-wrapper {
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 2.23%;
+    margin-top: 2.23%;
     .comment-box {
         @include blur();
         @include reset();
@@ -84,20 +84,21 @@
         height: 100px;
         .comment-image {
             @include border();
-            margin-top: 15px;
-            margin-left: 15px;
+            margin-top: 1.112%;
+            margin-left: 1.112%;
             height: 100%;
         }
     }
     .comment-text {
-        padding-left: 0px;
+        padding-left: 0;
         padding-right: 0px;
-        margin-left: 30px;
+        margin-left: 3.47%;
         h3 {
-            padding-top: 10px;
+            padding-top: 1.6%;
         }
         p {
-            padding-right: 30px;
+            padding-right: 4.7%;
+            margin-bottom: 1.54%;
             line-height: 1.4;
             text-align: justify;
         }
@@ -106,15 +107,15 @@
     #leave-reply-text {
         @include blur();
         border-radius: 0;
-        padding: 20px;
+        padding: 2.31%;
     }
     #leave-reply-submit {
-        margin-left: 0px;
+        margin-left: 0;
         float: right;
-        margin-bottom: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        margin-bottom: 5.8%;
+        padding-left: 3.46%;
+        padding-right: 3.46%;
+        padding-top: .699%;
+        padding-bottom: .699%;
     }
 }

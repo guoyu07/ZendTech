@@ -6,7 +6,7 @@ footer {
     color: $gray;
     font-family: 'Kreon';
     .container {
-        @include side-margins(50px, 50px);
+        @include side-margins(3.71%, 3.71%);
         ul {
             list-style-type: none;
             li a p {
@@ -21,8 +21,8 @@ footer {
                 height: 60px;
             }
         }
-        // .footer-element {
-        //     @include top-down-margins(15px, 100px);
-        // }
+        .footer-wrapper {
+            margin-bottom: 4.4%;
+        }
     }
 }

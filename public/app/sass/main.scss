@@ -32,7 +32,7 @@ body {
 .form-wrapper {
     @include side-margins(0px,
     0px);
-    margin-bottom: 20px;
+    margin-bottom: 1.5%;
 }
 
 .page-form {
@@ -69,16 +69,16 @@ section.blog-page-posts {
         }
     }
     .main-nav {
-        margin-top: 10px;
-        @include side-margins(0px,
-        0px);
+        // margin-top: 10px;
+        @include side-margins(0px !important,
+        0px !important);
         @include side-padding(0px,
         0px);
         .my-nav-links {
             width: 100%;
-            @include side-margins(0px,
+            @include side-margins(7.53%,
             0px);
-            margin-top: 15px;
+            margin-top: 4.15%;
             li {
                 border-bottom: 1px solid $light-gray;
             }

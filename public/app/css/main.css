@@ -33,10 +33,10 @@ body {
   margin-right: 0px; }
 
 h1 {
-  font-size: 26px; }
+  font-size: 2.73rem; }
 
 h3 {
-  font-size: 20px; }
+  font-size: 2.33rem; }
 
 .jumbotron {
   font-family: 'Kreon';
@@ -44,18 +44,18 @@ h3 {
   background-color: white; }
   .jumbotron .container {
     width: 90%;
-    margin-top: 10px;
+    margin-top: .84%;
     border-top: 1px solid #EBEBEB;
     border-bottom: 1px solid #EBEBEB; }
     .jumbotron .container h1 {
       text-align: center;
       color: black;
       font-size: 3.733rem;
-      margin-top: 30px;
-      margin-bottom: 15px; }
+      margin-top: 2.8%;
+      margin-bottom: 1.4%; }
     .jumbotron .container p {
       margin-top: 0px;
-      margin-bottom: 30px;
+      margin-bottom: 2.8%;
       text-align: center;
       color: #929292; }
 
@@ -92,22 +92,19 @@ nav {
   nav .nav-link:visited {
     font-weight: 600;
     background-color: white !important; }
-  nav .navbar-brand {
-    margin-left: 30px; }
-    nav .navbar-brand img {
-      height: 100px;
-      margin-left: 5%;
-      padding-bottom: 10px; }
+  nav #logo {
+    margin-left: 10%;
+    padding-bottom: 5.4%; }
   nav .my-nav-links {
-    margin-top: 20px; }
+    margin-top: 4.411%; }
   nav .social-media {
-    margin-top: 5px; }
+    margin-top: 1.11%; }
   nav .social-icons {
     color: #E3E3E3;
     float: right;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 30px; }
+    padding-left: 2.21%;
+    padding-right: 2.21%;
+    font-size: 2.9rem; }
   nav .social-icons:hover {
     color: #76A0AA; }
 
@@ -127,11 +124,11 @@ nav {
 .posts {
   margin-bottom: 10%; }
   .posts .post-item {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 25%;
+    margin-left: 3.7%;
+    margin-right: 3%;
+    width: 26%;
     z-index: 0;
-    margin-bottom: 25px;
+    margin-bottom: 2%;
     display: inline-block; }
     .posts .post-item a:hover {
       color: #76A0AA; }
@@ -142,13 +139,13 @@ nav {
     outline: 1px solid #929292; }
 
 aside {
-  margin-top: 15px; }
+  margin-top: 1.112%; }
   aside .home-aside-links {
     z-index: 5;
-    margin-left: 50px;
-    margin-right: 50px; }
+    margin-left: 3.7%;
+    margin-right: 3.7%; }
     aside .home-aside-links .blog-links {
-      margin-bottom: 30px;
+      margin-bottom: 2.4%;
       width: 45%; }
     aside .home-aside-links ul {
       width: 30%;
@@ -177,17 +174,17 @@ aside {
   margin: 0; }
   .jumbotron-post-header .post-header {
     margin-left: 0;
-    padding: 15px; }
+    padding: 1.112%; }
 
 .post-page {
-  margin-left: 15px; }
+  margin-left: 1.112%; }
 
 .post-article {
-  margin-top: 15px;
-  margin-left: 0;
-  margin-right: 0; }
+  margin-top: 1.112%; }
   .post-article .article div {
-    margin-top: 15px; }
+    margin-top: 1.112%;
+    padding-left: 0;
+    padding-right: 0; }
   .post-article .article p {
     line-height: 1.9;
     text-align: justify; }
@@ -203,7 +200,7 @@ aside {
     position: relative;
     padding-bottom: 56.25%;
     /* 16:9 */
-    padding-top: 25px;
+    padding-top: 2.6%;
     height: 0; }
   .video-wrapper iframe {
     position: absolute;
@@ -215,11 +212,11 @@ aside {
 .side-menu-wrapper ul li a p {
   line-height: 1.4; }
 .side-menu-wrapper ul {
-  margin-bottom: 50px; }
+  margin-bottom: 16.5%; }
 
 .comments-wrapper {
-  margin-left: 30px;
-  margin-top: 30px; }
+  margin-left: 2.23%;
+  margin-top: 2.23%; }
   .comments-wrapper .comment-box {
     -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
     -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
@@ -237,17 +234,18 @@ aside {
     .comments-wrapper .comments-image-box .comment-image {
       border: 5px solid white;
       outline: 1px solid #929292;
-      margin-top: 15px;
-      margin-left: 15px;
+      margin-top: 1.112%;
+      margin-left: 1.112%;
       height: 100%; }
   .comments-wrapper .comment-text {
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: 0px;
-    margin-left: 30px; }
+    margin-left: 3.47%; }
     .comments-wrapper .comment-text h3 {
-      padding-top: 10px; }
+      padding-top: 1.6%; }
     .comments-wrapper .comment-text p {
-      padding-right: 30px;
+      padding-right: 4.7%;
+      margin-bottom: 1.54%;
       line-height: 1.4;
       text-align: justify; }
   .comments-wrapper #leave-reply-email,
@@ -256,15 +254,15 @@ aside {
     -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
     box-shadow: inset 0 8px 65px -6px #FCFCFC;
     border-radius: 0;
-    padding: 20px; }
+    padding: 2.31%; }
   .comments-wrapper #leave-reply-submit {
-    margin-left: 0px;
+    margin-left: 0;
     float: right;
-    margin-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 6px;
-    padding-bottom: 6px; }
+    margin-bottom: 5.8%;
+    padding-left: 3.46%;
+    padding-right: 3.46%;
+    padding-top: .699%;
+    padding-bottom: .699%; }
 
 footer {
   border-top: 1px solid #EBEBEB;
@@ -272,8 +270,8 @@ footer {
   color: #929292;
   font-family: 'Kreon'; }
   footer .container {
-    margin-left: 50px;
-    margin-right: 50px; }
+    margin-left: 3.71%;
+    margin-right: 3.71%; }
     footer .container ul {
       list-style-type: none; }
       footer .container ul li a p {
@@ -282,6 +280,8 @@ footer {
       list-style-type: disc; }
     footer .container .logo-box img {
       height: 60px; }
+    footer .container .footer-wrapper {
+      margin-bottom: 4.4%; }
 
 @font-face {
   font-family: 'Kreon';
@@ -300,11 +300,11 @@ body {
 .form-wrapper {
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom: 20px; }
+  margin-bottom: 1.5%; }
 
 .page-form {
-  margin-left: 5px;
-  margin-right: 5px; }
+  margin-left: 0.375%;
+  margin-right: 0.375%; }
   .page-form input {
     border-radius: 0px;
     -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
@@ -336,16 +336,15 @@ section.blog-page-posts .blog-page-post-item h3 {
       padding-bottom: 0px; }
 
   .main-nav {
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     padding-left: 0px;
     padding-right: 0px; }
     .main-nav .my-nav-links {
       width: 100%;
-      margin-left: 0px;
+      margin-left: 7.53%;
       margin-right: 0px;
-      margin-top: 15px; }
+      margin-top: 4.15%; }
       .main-nav .my-nav-links li {
         border-bottom: 1px solid #EBEBEB; }
       .main-nav .my-nav-links a {
@@ -504,8 +503,8 @@ section.blog-page-posts .blog-page-post-item h3 {
 
   #reg-form,
   #login-form {
-    margin-left: 5px;
-    margin-right: 5px; }
+    margin-left: 0.375%;
+    margin-right: 0.375%; }
     #reg-form input,
     #login-form input {
       border-radius: 0px;
@@ -588,8 +587,8 @@ section.blog-page-posts .blog-page-post-item h3 {
 
   #reg-form,
   #login-form {
-    margin-left: 5px;
-    margin-right: 5px; }
+    margin-left: 0.375%;
+    margin-right: 0.375%; }
     #reg-form input,
     #login-form input {
       border-radius: 0px;

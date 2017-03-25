@@ -14,11 +14,11 @@
 .posts {
   margin-bottom: 10%; }
   .posts .post-item {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 25%;
+    margin-left: 3.7%;
+    margin-right: 3%;
+    width: 26%;
     z-index: 0;
-    margin-bottom: 25px;
+    margin-bottom: 2%;
     display: inline-block; }
     .posts .post-item a:hover {
       color: #76A0AA; }
@@ -29,13 +29,13 @@
     outline: 1px solid #929292; }
 
 aside {
-  margin-top: 15px; }
+  margin-top: 1.112%; }
   aside .home-aside-links {
     z-index: 5;
-    margin-left: 50px;
-    margin-right: 50px; }
+    margin-left: 3.7%;
+    margin-right: 3.7%; }
     aside .home-aside-links .blog-links {
-      margin-bottom: 30px;
+      margin-bottom: 2.4%;
       width: 45%; }
     aside .home-aside-links ul {
       width: 30%;

@@ -6,20 +6,19 @@
     background-color: white;
     .container {
         width: 90%;
-        margin-top: 10px;
+        margin-top: .84%;
         border-top: 1px solid $light-gray;
         border-bottom: 1px solid $light-gray;
         h1 {
             text-align: center;
             color: black;
             font-size: 3.733rem;
-            @include top-down-margins(30px, 15px);
+            @include top-down-margins(2.8%, 1.4%);
         }
         p {
-            @include top-down-margins(0px, 30px);
+            @include top-down-margins(0px, 2.8%);
             text-align: center;
             color: $gray;
-            // font-size: 1rem;
         }
     }
 }

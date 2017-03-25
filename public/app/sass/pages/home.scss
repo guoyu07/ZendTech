@@ -24,10 +24,10 @@
 .posts {
     margin-bottom: 10%;
     .post-item {
-        @include side-margins(50px, 50px);
-        width: 25%;
+        @include side-margins(3.7%, 3%);
+        width: 26%;
         z-index: 0;
-        margin-bottom: 25px;
+        margin-bottom: 2%;
         display: inline-block;
         a:hover {
             color: $blue;
@@ -42,14 +42,14 @@
 }
 
 aside {
-    margin-top: 15px;
+    margin-top: 1.112%;
     .home-aside-links {
         .blog-links {
-            margin-bottom: 30px;
+            margin-bottom: 2.4%;
             width: 45%;
         }
         z-index: 5;
-        @include side-margins(50px, 50px);
+        @include side-margins(3.7%, 3.7%);
         ul {
             width: 30%;
             @include side-margins(15px, 0);
