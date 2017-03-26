@@ -75,10 +75,24 @@
     margin-right: 0px;
 }
 
+@mixin footer-social-media($font-size, $margin-left) {
+    .social-media-footer {
+        // position: relative;
+        // right: 350px;
+        // top: 20px;
+        font-size: $font-size;
+        a {
+            margin-top: 10px;
+            margin-left: $margin-left;
+            color: $blue; //$god-damn-light-gray;
+        }
+    }
+}
+
 @mixin form-styles() {
     margin-top: 5%;
     margin-bottom: 10%;
-    @include side-margins(.375%, .375%);
+    @include side-margins(3%, 3%);
     input,
     select,
     textarea {

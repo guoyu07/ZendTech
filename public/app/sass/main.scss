@@ -140,10 +140,12 @@ section.blog-page-posts {
             bottom: 140px;
             left: 10px;
         }
+        @include footer-social-media(15px,
+        5px);
     }
 }
 
-@media only screen and (min-width:480px) and (max-width:769px) {
+@media only screen and (min-width:480px) and (max-width:767px) {
     .navbar-header {
         //height: 100px;
         button {
@@ -155,7 +157,7 @@ section.blog-page-posts {
         }
         #logo {
             margin-left: 8%;
-            margin-top: 2.1%;
+            margin-top: 5%;
             position: relative;
             bottom: 30px;
         }
@@ -226,10 +228,12 @@ section.blog-page-posts {
                 line-height: 1;
             }
         }
+        @include footer-social-media(20px,
+        10px);
     }
 }
 
-@media only screen and (min-width:769px) and (max-width:992px) {
+@media only screen and (min-width:767px) and (max-width:992px) {
     .posts {
         @include side-margins(0px,
         0px);
