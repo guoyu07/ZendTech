@@ -32,13 +32,12 @@ export default {
     },
     byId: function(context) {
         let id = context.params['id'];
-        Promise.all([data.byId(id), templates.load('blog')])
-            .then(function([blog, template]) {
+        Promise.all([data.byId(id), data.all(), templates.load('blog')])
+            .then(function([blog, blogs, template]) {
                 let user = localStorage.getItem('user');
                 let newUser = JSON.parse(user);
 
-                console.log(blog.blog.comments);
-                context.$element().html(template(blog.blog));
+                context.$element().html(template(blog.blog, blogs));
                 $('#leave-reply-submit').on('click', function(ev) {
                     ev.preventDefault();
                     let comment = {
@@ -73,11 +72,7 @@ export default {
 
                     data.create(post)
                         .then(result => {
-                            $.amaran({
-                                'message': 'Post created!',
-                                'position': 'top right',
-                                'delay': 5000
-                            });
+                            notifier.send('Post created!');
                             context.redirect('#/home');
                         })
                 });
