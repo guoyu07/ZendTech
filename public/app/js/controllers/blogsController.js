@@ -32,12 +32,12 @@ export default {
     },
     byId: function(context) {
         let id = context.params['id'];
-        Promise.all([data.byId(id), data.all(), templates.load('blog')])
-            .then(function([blog, blogs, template]) {
+        Promise.all([data.byId(id), templates.load('blog')])
+            .then(function([blog, template]) {
                 let user = localStorage.getItem('user');
                 let newUser = JSON.parse(user);
 
-                context.$element().html(template(blog.blog, blogs));
+                context.$element().html(template(blog.blog));
                 $('#leave-reply-submit').on('click', function(ev) {
                     ev.preventDefault();
                     let comment = {

@@ -113,6 +113,13 @@ section.blog-page-posts {
         text-align: center;
     }
     @include little-screen-blog();
+    .comments-wrapper {
+        .date-wrapper {
+            em {
+                font-size: .9rem;
+            }
+        }
+    }
     footer {
         font-size: 9px;
         .container {

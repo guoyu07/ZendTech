@@ -85,8 +85,7 @@
         }
     }
     .comment-box {
-        @include blur(#fbfbfb);
-        //@include reset();
+        @include blur($light-gray);
         margin-bottom: 5%;
         border: 1px solid $god-damn-light-gray;
     }
