@@ -55,6 +55,11 @@
         .comments-wrapper {
             @include side-margins(1%, 1%);
         }
+        .comments-image-box {
+            .comment-image {
+                margin-left: 3%;
+            }
+        }
         .article {
             @include side-margins(1%, 1%);
             @include side-padding(1%, 1%);
