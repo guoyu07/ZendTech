@@ -186,10 +186,10 @@ section {
     }
     .home-video {
         div {
-            margin-bottom: 15px;
+            margin-bottom: 10%;
             iframe {
-                width: 80%;
-                height: 30%;
+                margin-left: 3%;
+                margin-right: 3%;
             }
         }
     }
@@ -255,6 +255,10 @@ section {
     }
     .home-video {
         margin-bottom: 10%;
+        iframe {
+            width: 17%;
+            height: 100px;
+        }
     }
     //blog page
     @include blog-post-page();

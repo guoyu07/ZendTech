@@ -606,10 +606,10 @@ section .blog-page-posts {
       max-width: 100%; }
 
   .home-video div {
-    margin-bottom: 15px; }
+    margin-bottom: 10%; }
     .home-video div iframe {
-      width: 80%;
-      height: 30%; }
+      margin-left: 3%;
+      margin-right: 3%; }
 
   section.blog-page-posts {
     margin-bottom: 20px; }
@@ -718,6 +718,9 @@ section .blog-page-posts {
 
   .home-video {
     margin-bottom: 10%; }
+    .home-video iframe {
+      width: 17%;
+      height: 100px; }
 
   .jumbotron-post-header {
     padding: 1%; }
