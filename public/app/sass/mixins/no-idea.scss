@@ -36,6 +36,14 @@
 }
 
 @mixin blog-post-page() {
+    .jumbotron-post-header {
+        .post-header {
+            width: 98%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        padding: 1%;
+    }
     section.posts {
         margin: 0;
         margin-bottom: 10%;
@@ -121,11 +129,11 @@
     margin-bottom: $bottom;
 }
 
-@mixin shadow() {
+@mixin shadow($border-color: $light-gray) {
     box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
-    border-color: $light-gray;
+    border-color: $border-color;
     -webkit-box-shadow: 4px 6px 4px -4px $gray;
     -moz-box-shadow: 4px 6px 4px -4px $gray;
     box-shadow: 4px 6px 4px -4px $gray;

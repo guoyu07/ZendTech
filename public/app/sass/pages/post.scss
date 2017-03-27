@@ -3,8 +3,12 @@
 .jumbotron-single-post {
     .single-post {
         @include blur($almost-white);
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+        p {
+            font-family: 'Kreon';
+        }
     }
 }
 

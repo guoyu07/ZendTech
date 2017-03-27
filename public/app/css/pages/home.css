@@ -6,10 +6,18 @@
   padding-left: -15px !important;
   padding-right: -15px !important; }
 
+.carousel .carousel-indicators {
+  top: 330px; }
+.carousel .carousel-indicators li {
+  border: 1px solid black; }
+.carousel .carousel-indicators .active {
+  background-color: black; }
+.carousel .carousel-indicators .active {
+  background-color: black; }
 .carousel .item {
-  height: 454px; }
+  height: 304px; }
   .carousel .item h3 {
-    color: #E3E3E3; }
+    color: #e3e3e3; }
 .carousel .left.carousel-control a {
   opacity: 0; }
   .carousel .left.carousel-control a :hover {
@@ -19,7 +27,7 @@
 .carousel .left.carousel-control span {
   background-color: white;
   width: 30%;
-  height: 10%;
+  height: 15%;
   top: 50%;
   color: black;
   left: 0%;
@@ -32,7 +40,7 @@
 .carousel .right.carousel-control span {
   background-color: white;
   width: 30%;
-  height: 10%;
+  height: 15%;
   top: 50%;
   color: black;
   right: 0%;
@@ -53,7 +61,7 @@
       position: relative;
       z-index: 5; }
     .posts .post-item a:hover {
-      color: #76A0AA; }
+      color: #76a0aa; }
     .posts .post-item .post-image {
       max-width: 100%; }
   .posts .post-box {
@@ -79,10 +87,11 @@ aside {
     box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
-    border-color: #fbfbfb;
+    border-color: #929292;
     -webkit-box-shadow: 4px 6px 4px -4px #929292;
     -moz-box-shadow: 4px 6px 4px -4px #929292;
-    box-shadow: 4px 6px 4px -4px #929292; }
+    box-shadow: 4px 6px 4px -4px #929292;
+    border-radius: 3px; }
   aside .home-video iframe {
     margin: 4.5% 6.7%; }
 

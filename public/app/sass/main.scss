@@ -342,8 +342,13 @@ section {
             }
         }
     }
-    //@include blog-post-page();
     section.posts {
+        .jumbotron-post-header {
+            .post-header {
+                width: 92%;
+                margin-left: 3%;
+            }
+        }
         margin: 0;
         padding: 0;
         .post-header {

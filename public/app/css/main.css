@@ -48,12 +48,13 @@ h3 {
 .jumbotron {
   font-family: "Kreon";
   padding-top: 2px;
+  margin-top: 20px;
   background-color: white; }
   .jumbotron .container {
-    width: 90%;
+    width: 92%;
     margin-top: .84%;
-    border-top: 1px solid #fbfbfb;
-    border-bottom: 1px solid #fbfbfb; }
+    border-top: 1px solid #929292;
+    border-bottom: 1px solid #929292; }
     .jumbotron .container h1 {
       text-align: center;
       color: black;
@@ -100,7 +101,7 @@ nav {
     margin-bottom: 2.5%; }
   nav .nav-link:hover {
     background-color: white !important;
-    color: #76A0AA;
+    color: #76a0aa;
     font-weight: 600; }
   nav .nav-link:visited {
     font-weight: 600;
@@ -115,13 +116,13 @@ nav {
   nav .social-media {
     margin-top: 1.11%; }
   nav .social-icons {
-    color: #E3E3E3;
+    color: #e3e3e3;
     float: right;
     padding-left: 2.21%;
     padding-right: 2.21%;
     font-size: 2.9rem; }
   nav .social-icons:hover {
-    color: #76A0AA; }
+    color: #76a0aa; }
 
 .container-fluid {
   padding-left: 0px;
@@ -131,10 +132,18 @@ nav {
   padding-left: -15px !important;
   padding-right: -15px !important; }
 
+.carousel .carousel-indicators {
+  top: 330px; }
+.carousel .carousel-indicators li {
+  border: 1px solid black; }
+.carousel .carousel-indicators .active {
+  background-color: black; }
+.carousel .carousel-indicators .active {
+  background-color: black; }
 .carousel .item {
-  height: 454px; }
+  height: 304px; }
   .carousel .item h3 {
-    color: #E3E3E3; }
+    color: #e3e3e3; }
 .carousel .left.carousel-control a {
   opacity: 0; }
   .carousel .left.carousel-control a :hover {
@@ -144,7 +153,7 @@ nav {
 .carousel .left.carousel-control span {
   background-color: white;
   width: 30%;
-  height: 10%;
+  height: 15%;
   top: 50%;
   color: black;
   left: 0%;
@@ -157,7 +166,7 @@ nav {
 .carousel .right.carousel-control span {
   background-color: white;
   width: 30%;
-  height: 10%;
+  height: 15%;
   top: 50%;
   color: black;
   right: 0%;
@@ -178,7 +187,7 @@ nav {
       position: relative;
       z-index: 5; }
     .posts .post-item a:hover {
-      color: #76A0AA; }
+      color: #76a0aa; }
     .posts .post-item .post-image {
       max-width: 100%; }
   .posts .post-box {
@@ -204,22 +213,26 @@ aside {
     box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
-    border-color: #fbfbfb;
+    border-color: #929292;
     -webkit-box-shadow: 4px 6px 4px -4px #929292;
     -moz-box-shadow: 4px 6px 4px -4px #929292;
-    box-shadow: 4px 6px 4px -4px #929292; }
+    box-shadow: 4px 6px 4px -4px #929292;
+    border-radius: 3px; }
   aside .home-video iframe {
     margin: 4.5% 6.7%; }
 
 .jumbotron-single-post .single-post {
-  -moz-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-  -webkit-box-shadow: inset 0 8px 65px -6px #FCFCFC;
-  box-shadow: inset 0 8px 65px -6px #FCFCFC;
-  -moz-box-shadow: inset 0 -8px 65px 6px #FCFCFC;
-  -webkit-box-shadow: inset 0 -8px 65px 6px #FCFCFC;
-  box-shadow: inset 0 -8px 65px 6px #FCFCFC;
-  margin-left: 2.5%;
-  margin-right: 2.5%; }
+  -moz-box-shadow: inset 0 8px 65px -6px #fcfcfc;
+  -webkit-box-shadow: inset 0 8px 65px -6px #fcfcfc;
+  box-shadow: inset 0 8px 65px -6px #fcfcfc;
+  -moz-box-shadow: inset 0 -8px 65px 6px #fcfcfc;
+  -webkit-box-shadow: inset 0 -8px 65px 6px #fcfcfc;
+  box-shadow: inset 0 -8px 65px 6px #fcfcfc;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%; }
+  .jumbotron-single-post .single-post p {
+    font-family: 'Kreon'; }
 
 .jumbotron-post-header {
   padding: 0;
@@ -285,7 +298,7 @@ aside {
     -webkit-box-shadow: inset 0 -8px 65px 6px #fbfbfb;
     box-shadow: inset 0 -8px 65px 6px #fbfbfb;
     margin-bottom: 5%;
-    border: 1px solid #E3E3E3; }
+    border: 1px solid #e3e3e3; }
   .comments-wrapper .content-wrapper {
     margin: 0 !important;
     padding: 0 !important; }
@@ -341,7 +354,7 @@ aside {
 
 footer {
   border-top: 1px solid #fbfbfb;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   color: #929292;
   font-family: "Kreon"; }
   footer .container {
@@ -376,8 +389,8 @@ small {
   font-family: "Georgia"; }
 
 .form-wrapper {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 1.5%; }
 
 .page-form {
@@ -398,11 +411,11 @@ small {
   .page-form button {
     border-radius: 0px;
     color: #fbfbfb;
-    background-color: #76A0AA; }
+    background-color: #76a0aa; }
 
-section.blog-page-posts {
+section .blog-page-posts {
   margin-bottom: 10%; }
-  section.blog-page-posts .blog-page-post-item h3 {
+  section .blog-page-posts .blog-page-post-item h3 {
     font-size: 100%; }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -427,14 +440,14 @@ section.blog-page-posts {
       padding-bottom: 0px; }
 
   .main-nav {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    padding-left: 0px;
-    padding-right: 0px; }
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0; }
     .main-nav .my-nav-links {
       width: 100%;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin-left: 0;
+      margin-right: 0;
       margin-top: 4.15%; }
       .main-nav .my-nav-links li {
         border-bottom: 1px solid #fbfbfb; }
@@ -455,6 +468,13 @@ section.blog-page-posts {
     margin-bottom: 25px; }
     .posts .home-post .post-image {
       max-width: 100%; }
+
+  .jumbotron-post-header {
+    padding: 1%; }
+    .jumbotron-post-header .post-header {
+      width: 98%;
+      margin-left: 1%;
+      margin-right: 1%; }
 
   section.posts {
     margin: 0;
@@ -519,7 +539,7 @@ section.blog-page-posts {
       footer .social-media-footer a {
         margin-top: 10px;
         margin-left: 5px;
-        color: #76A0AA; } }
+        color: #76a0aa; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .navbar-header button {
     margin-top: 5%;
@@ -569,6 +589,13 @@ section.blog-page-posts {
       padding-left: 0px;
       padding-right: 0px;
       width: 45%; }
+
+  .jumbotron-post-header {
+    padding: 1%; }
+    .jumbotron-post-header .post-header {
+      width: 98%;
+      margin-left: 1%;
+      margin-right: 1%; }
 
   section.posts {
     margin: 0;
@@ -625,7 +652,7 @@ section.blog-page-posts {
     #login-form button {
       border-radius: 0px;
       color: #fbfbfb;
-      background-color: #76A0AA; }
+      background-color: #76a0aa; }
 
   footer {
     font-size: 15px; }
@@ -641,7 +668,7 @@ section.blog-page-posts {
       footer .social-media-footer a {
         margin-top: 10px;
         margin-left: 10px;
-        color: #76A0AA; } }
+        color: #76a0aa; } }
 @media only screen and (min-width: 767px) and (max-width: 992px) {
   .posts {
     margin-left: 0px;
@@ -660,6 +687,13 @@ section.blog-page-posts {
 
   .home-video {
     margin-bottom: 10%; }
+
+  .jumbotron-post-header {
+    padding: 1%; }
+    .jumbotron-post-header .post-header {
+      width: 98%;
+      margin-left: 1%;
+      margin-right: 1%; }
 
   section.posts {
     margin: 0;
@@ -716,7 +750,7 @@ section.blog-page-posts {
     #login-form button {
       border-radius: 0px;
       color: #fbfbfb;
-      background-color: #76A0AA; }
+      background-color: #76a0aa; }
 
   footer .footer-wrapper {
     margin-bottom: 12%; }
@@ -729,7 +763,7 @@ section.blog-page-posts {
       footer .container .social-media-footer a {
         margin-top: 10px;
         margin-left: 10px;
-        color: #76A0AA; } }
+        color: #76a0aa; } }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .home-aside-links {
     margin-left: 0px; }
@@ -754,6 +788,9 @@ section.blog-page-posts {
   section.posts {
     margin: 0;
     padding: 0; }
+    section.posts .jumbotron-post-header .post-header {
+      width: 92%;
+      margin-left: 3%; }
     section.posts .post-header {
       margin-left: 1%; }
     section.posts .post-page {
