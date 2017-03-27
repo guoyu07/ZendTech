@@ -95,4 +95,35 @@ aside {
   aside .home-video iframe {
     margin: 4.5% 6.7%; }
 
+.header-text {
+  position: absolute;
+  top: 12%;
+  left: 58%;
+  width: 36%;
+  height: 90%;
+  color: #f0f0f0;
+  opacity: 0.4;
+  background-color: #000;
+  z-index: 20; }
+
+.header-text:hover {
+  background-color: #000;
+  opacity: .9;
+  color: #fff; }
+
+.header-text h2 {
+  color: #fbfbfb; }
+
+.carousel-box-title {
+  display: inline-block;
+  overflow: hidden;
+  padding: 10px; }
+
+.carousel-box-text {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 18px;
+  max-height: 130px;
+  color: #fbfbfb; }
+
 /*# sourceMappingURL=home.css.map */
