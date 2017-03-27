@@ -1,4 +1,4 @@
-@import '../variables';
+@import "../variables";
 @mixin blur($color) {
     -moz-box-shadow: inset 0 8px 65px -6px $color;
     -webkit-box-shadow: inset 0 8px 65px -6px $color;

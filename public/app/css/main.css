@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   color: black;
-  font-family: 'Kreon'; }
+  font-family: "Kreon"; }
 
 body {
   color: #929292; }
@@ -30,10 +30,10 @@ body {
     color: inherit; }
 
 small {
-  font-family: 'Georgia'; }
+  font-family: "Georgia"; }
 
 p {
-  font-family: 'DroidSans'; }
+  font-family: "DroidSans"; }
 
 .row {
   margin-left: 0px;
@@ -46,7 +46,7 @@ h3 {
   font-size: 2.33rem; }
 
 .jumbotron {
-  font-family: 'Kreon';
+  font-family: "Kreon";
   padding-top: 2px;
   background-color: white; }
   .jumbotron .container {
@@ -87,7 +87,7 @@ h3 {
     content: "\003E\003E\00a0"; }
 
 nav {
-  font-family: 'Kreon';
+  font-family: "Kreon";
   margin-bottom: 0px !important; }
   nav .navbar-header {
     padding-top: 1.1%;
@@ -343,7 +343,7 @@ footer {
   border-top: 1px solid #fbfbfb;
   background-color: #F9F9F9;
   color: #929292;
-  font-family: 'Kreon'; }
+  font-family: "Kreon"; }
   footer .container {
     margin-left: 3.71%;
     margin-right: 3.71%; }
@@ -359,7 +359,7 @@ footer {
       margin-bottom: 12%; }
 
 @font-face {
-  font-family: 'Kreon';
+  font-family: "Kreon";
   src: url("../../assets/fonts/Kreon-Light.ttf"); }
 @font-face {
   font-family: "DroidSans";
@@ -369,11 +369,11 @@ html {
 
 body {
   font-size: 15px;
-  font-family: 'DroidSans', 'Kreon', 'Times New Roman', Times, serif;
+  font-family: "DroidSans", "Kreon", "Times New Roman", Times, serif;
   overflow-x: hidden; }
 
 small {
-  font-family: 'Georgia'; }
+  font-family: "Georgia"; }
 
 .form-wrapper {
   margin-left: 0px;

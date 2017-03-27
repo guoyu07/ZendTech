@@ -1,6 +1,6 @@
 /*globals Promise */
-'use strict';
-const encryption = require('../utilities/encryption');
+"use strict";
+//const encryption = require("../utilities/encryption");
 
 module.exports = function(User) {
     function create(options) {
@@ -13,7 +13,7 @@ module.exports = function(User) {
             // salt: salt,
             // hashPass: hashPass,
             email: options.email,
-            avatar: options.avatar,
+            avatar: options.avatar
         });
 
         return new Promise((resolve, reject) => {
@@ -23,8 +23,8 @@ module.exports = function(User) {
                 }
 
                 return resolve(user);
-            })
-        })
+            });
+        });
     }
 
     function getById(id) {
@@ -35,7 +35,7 @@ module.exports = function(User) {
                 }
                 return resolve(user);
             });
-        })
+        });
     }
 
     function findByUsername(username) {
@@ -58,8 +58,8 @@ module.exports = function(User) {
                 }
 
                 return resolve(users);
-            })
-        })
+            });
+        });
     }
 
     return {
@@ -67,6 +67,6 @@ module.exports = function(User) {
         getById,
         findByUsername,
         all
-    }
+    };
 
-}
+};

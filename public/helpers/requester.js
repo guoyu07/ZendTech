@@ -1,16 +1,17 @@
-'use strict';
-import 'jquery'
+/*globals $ */
+"use strict";
+import "jquery";
 
 export default {
     get: function(url, headers) {
         return new Promise(function(resolve, reject) {
             $.ajax({
                 url: url,
-                method: 'GET',
-                contentType: 'application/json',
+                method: "GET",
+                contentType: "application/json",
                 headers: headers,
-                success: function(data) { resolve(data) },
-                error: function(err) { reject(err) }
+                success: function(data) { resolve(data); },
+                error: function(err) { reject(err); }
             });
         });
     },
@@ -18,13 +19,13 @@ export default {
         return new Promise(function(resolve, reject) {
             $.ajax({
                 url: url,
-                method: 'POST',
+                method: "POST",
                 headers: headers,
-                contentType: 'application/json',
+                contentType: "application/json",
                 data: JSON.stringify(data),
-                success: function(data) { resolve(data) },
-                error: function(err) { reject(err) }
-            })
+                success: function(resData) { resolve(resData); },
+                error: function(err) { reject(err); }
+            });
         });
     },
 
@@ -32,13 +33,13 @@ export default {
         return new Promise(function(resolve, reject) {
             $.ajax({
                 url: url,
-                method: 'PUT',
+                method: "PUT",
                 headers: headers,
-                contentType: 'application/json',
+                contentType: "application/json",
                 data: JSON.stringify(data),
-                success: function(data) { resolve(data) },
-                error: function(err) { reject(err) }
-            })
+                success: function(resData) { resolve(resData); },
+                error: function(err) { reject(err); }
+            });
         });
     },
 
@@ -46,13 +47,13 @@ export default {
         return new Promise(function(resolve, reject) {
             $.ajax({
                 url: url,
-                method: 'DELETE',
+                method: "DELETE",
                 headers: headers,
-                contentType: 'application/json',
+                contentType: "application/json",
                 data: JSON.stringify(data),
-                success: function(data) { resolve(data) },
-                error: function(err) { reject(err) }
-            })
+                success: function(resData) { resolve(resData); },
+                error: function(err) { reject(err); }
+            });
         });
     }
-}
+};

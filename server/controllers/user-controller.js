@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = function(data) {
     return {
@@ -17,12 +17,6 @@ module.exports = function(data) {
                 .then(user => {
                     res.json({ user });
                 });
-        },
-
-        getProfile(req, res) {
-
         }
-    }
-
-
-}
+    };
+};

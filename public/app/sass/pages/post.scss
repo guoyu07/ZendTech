@@ -1,5 +1,5 @@
-@import '../mixins/no-idea';
-@import '../variables';
+@import "../mixins/no-idea";
+@import "../variables";
 .jumbotron-single-post {
     .single-post {
         @include blur($almost-white);
@@ -112,7 +112,7 @@
             padding-top: 1.6%;
         }
         p {
-            //font-family: 'DroidSans';
+            //font-family: "DroidSans";
             color: $gray;
             margin-top: 1.6%;
             padding-right: 4.7%;

@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const LocalStrategy = require('passport-local')
+const LocalStrategy = require("passport-local");
 
 module.exports = function(passport, data) {
     const authStrategy = new LocalStrategy(
@@ -18,4 +18,4 @@ module.exports = function(passport, data) {
         });
 
     passport.use(authStrategy);
-}
+};

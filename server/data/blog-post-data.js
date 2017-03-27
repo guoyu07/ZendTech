@@ -1,5 +1,5 @@
 /* gloabls Promise */
-'use strict';
+"use strict";
 module.exports = function(BlogPost) {
     function create(options) {
         let blog = new BlogPost({
@@ -7,11 +7,11 @@ module.exports = function(BlogPost) {
             article: options.article,
             image: options.image,
             videoUrl: options.videoUrl,
-            category: options.category || 'Common',
+            category: options.category || "Common",
             postedBy: options.postedBy,
             postedOn: options.postedOn,
             comments: options.comments || {}
-        })
+        });
 
         return new Promise((resolve, reject) => {
             blog.save((err) => {
@@ -19,15 +19,15 @@ module.exports = function(BlogPost) {
                     return reject(err);
                 }
                 BlogPost.findOne({ _id: blog._id },
-                    (err, message) => {
+                    (err, blog) => {
                         if (err) {
                             reject(err);
                         }
                         resolve(blog);
                     });
 
-            })
-        })
+            });
+        });
     }
 
     function getById(id) {
@@ -49,7 +49,7 @@ module.exports = function(BlogPost) {
                 }
 
                 return resolve(blogs);
-            })
+            });
         });
     }
 
@@ -69,5 +69,5 @@ module.exports = function(BlogPost) {
         getById,
         all,
         addComment
-    }
-}
+    };
+};

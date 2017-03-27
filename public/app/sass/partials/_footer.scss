@@ -1,10 +1,10 @@
-@import '../variables';
-@import '../mixins/no-idea';
+@import "../variables";
+@import "../mixins/no-idea";
 footer {
     border-top: 1px solid $light-gray;
     background-color: $footer;
     color: $gray;
-    font-family: 'Kreon';
+    font-family: "Kreon";
     .container {
         @include side-margins(3.71%, 3.71%);
         ul {

@@ -1,22 +1,22 @@
-@import './partials/loader';
-@import './variables';
-@import './partials/reset';
-@import './partials/font-size';
-@import './mixins/no-idea';
-@import './partials/jumbotron';
-@import './partials/breadcrumb';
-@import './partials/nav';
-@import './pages/home';
-@import './pages/post';
-@import './partials/footer';
+@import "./partials/loader";
+@import "./variables";
+@import "./partials/reset";
+@import "./partials/font-size";
+@import "./mixins/no-idea";
+@import "./partials/jumbotron";
+@import "./partials/breadcrumb";
+@import "./partials/nav";
+@import "./pages/home";
+@import "./pages/post";
+@import "./partials/footer";
 @font-face {
-    font-family: 'Kreon';
-    src: url('../../assets/fonts/Kreon-Light.ttf');
+    font-family: "Kreon";
+    src: url("../../assets/fonts/Kreon-Light.ttf");
 }
 
 @font-face {
     font-family: "DroidSans";
-    src: url('../../assets/fonts/DroidSans.ttf');
+    src: url("../../assets/fonts/DroidSans.ttf");
 }
 
 html {
@@ -25,29 +25,31 @@ html {
 
 body {
     font-size: 15px;
-    font-family: 'DroidSans', 'Kreon', 'Times New Roman', Times, serif;
+    font-family: "DroidSans", "Kreon", "Times New Roman", Times, serif;
     overflow-x: hidden;
 }
 
 small {
-    font-family: 'Georgia';
+    font-family: "Georgia";
 }
 
 .form-wrapper {
-    @include side-margins(0px,
-    0px);
+    @include side-margins(0,
+    0);
     margin-bottom: 1.5%;
 }
 
 .page-form {
-    @include form-styles();
+    @include form-styles;
 }
 
-section.blog-page-posts {
-    margin-bottom: 10%;
-    .blog-page-post-item {
-        h3 {
-            font-size: 100%;
+section {
+    .blog-page-posts {
+        margin-bottom: 10%;
+        .blog-page-post-item {
+            h3 {
+                font-size: 100%;
+            }
         }
     }
 }
@@ -79,14 +81,14 @@ section.blog-page-posts {
     }
     .main-nav {
         // margin-top: 10px;
-        @include side-margins(0px !important,
-        0px !important);
-        @include side-padding(0px,
-        0px);
+        @include side-margins(0 !important,
+        0 !important);
+        @include side-padding(0,
+        0);
         .my-nav-links {
             width: 100%;
-            @include side-margins(0px,
-            0px);
+            @include side-margins(0,
+            0);
             margin-top: 4.15%;
             li {
                 border-bottom: 1px solid $light-gray;

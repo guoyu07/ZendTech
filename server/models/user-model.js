@@ -1,8 +1,8 @@
 /* globals module require String */
-'use strict';
-const mongoose = require('mongoose');
-const requiredMessage = '{PATH} is required!';
-//const encryption = require('../utilities/encryption');
+"use strict";
+const mongoose = require("mongoose");
+const requiredMessage = "{PATH} is required!";
+//const encryption = require("../utilities/encryption");
 
 let userSchema = mongoose.Schema({
     username: {
@@ -23,12 +23,12 @@ let userSchema = mongoose.Schema({
     email: {
         type: String,
         unique: true,
-        match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address'],
+        match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, "Please fill a valid email address"],
         require: requiredMessage
     },
     avatar: {
         type: String,
-        default: 'http://www.subdimension.co.uk/style/assets/avatar.png'
+        default: "http://www.subdimension.co.uk/style/assets/avatar.png"
     }
 });
 
@@ -42,5 +42,5 @@ let userSchema = mongoose.Schema({
 //     }
 // });
 
-mongoose.model('User', userSchema);
-module.exports = mongoose.model('User');
+mongoose.model("User", userSchema);
+module.exports = mongoose.model("User");

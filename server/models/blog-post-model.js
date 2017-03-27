@@ -1,10 +1,10 @@
 /* globals require module */
-'use strict';
+"use strict";
 
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 let dateFormat = require("dateformat");
 
-const requiredMessage = '{PATH} is required';
+const requiredMessage = "{PATH} is required";
 
 let blogPostSchema = mongoose.Schema({
     title: {
@@ -12,22 +12,22 @@ let blogPostSchema = mongoose.Schema({
         requred: requiredMessage
     },
     article: {
-        type: String,
-        // required: requiredMessage
+        type: String
+            // required: requiredMessage
     },
     image: {
-        type: String,
+        type: String
     },
     videoUrl: {
         type: String
     },
     category: {
         type: String,
-        default: 'Common'
+        default: "Common"
     },
     postedBy: {
-        type: String,
-        // required: requiredMessage
+        type: String
+            // required: requiredMessage
     },
     postedOn: {
         type: String,
@@ -39,11 +39,11 @@ let blogPostSchema = mongoose.Schema({
             type: String,
             default: dateFormat("fullDate")
         },
-        content: String,
-        // required: requiredMessage
+        content: String
+            // required: requiredMessage
     }]
 });
 
-mongoose.model('BlogPost', blogPostSchema);
+mongoose.model("BlogPost", blogPostSchema);
 
-module.exports = mongoose.model('BlogPost');
+module.exports = mongoose.model("BlogPost");

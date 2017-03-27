@@ -1,6 +1,7 @@
-import 'jquery';
+/*globals $ */
+import "jquery";
 
 $(document).ready(function() {
     // Animate loader off screen
-    $(".loader").fadeOut("slow");;
+    $(".loader").fadeOut("slow");
 });

@@ -1,5 +1,5 @@
-'use strict';
-let passport = require('passport');
+"use strict";
+let passport = require("passport");
 
 module.exports = function(data) {
     return {
@@ -10,21 +10,21 @@ module.exports = function(data) {
                 // salt: req.body.salt,
                 // hashPass: req.body.hashPass,
                 email: req.body.email,
-                avatar: req.body.avatar,
-            }
+                avatar: req.body.avatar
+            };
             data.userData.create(user)
-                .then(user => {
-                    res.status(201).json({ user });
+                .then(resUser => {
+                    res.status(201).json({ resUser });
                 }).catch((err) => res.status(500).json(err));
         },
         login(req, res, next) {
-            const auth = passport.authenticate('local', (err, user) => {
+            const auth = passport.authenticate("local", (err, user) => {
                 if (err) {
                     next(err);
                     return;
                 }
                 if (!user) {
-                    res.status(500).json('Invalid name or password!');
+                    res.status(500).json("Invalid name or password!");
                 }
                 req.login(user, error => {
                     if (error) {
@@ -32,7 +32,7 @@ module.exports = function(data) {
                         return;
                     }
 
-                    res.status(201).json({ user })
+                    res.status(201).json({ user });
                 });
             });
             auth(req, res, next);
@@ -43,5 +43,5 @@ module.exports = function(data) {
         }
 
 
-    }
-}
+    };
+};

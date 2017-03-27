@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 const express = require("express"),
     session = require("express-session"),
     cookieParser = require("cookie-parser"),
@@ -14,7 +14,7 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
-require('./passport/')(app);
+require("./passport/")(app);
 require("./express")(app, constants);
 //require("./router")(app);
 require("./db")(constants);

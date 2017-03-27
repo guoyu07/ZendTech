@@ -2,7 +2,7 @@
 const passport = require("passport");
 
 const config = require("../../config/constants");
-const models = require('../../models')();
+const models = require("../../models")();
 const data = require("../../data")(config, models);
 
 
