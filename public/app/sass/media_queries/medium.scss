@@ -1,0 +1,73 @@
+@import "./variables";
+@import "./mixins/no-idea";
+
+@mixin medium(){
+    @media only screen and (min-width:992px) and (max-width:1200px) {
+        .home-aside-links {
+            margin-left: 0px;
+        }
+        .blog-links {
+            p {
+                line-height: 1;
+            }
+        }
+        .home-video {
+            div {
+                iframe {
+                    margin-left: 3.27%;
+                    margin-right: 3.27%;
+                }
+                :first-child {
+                    margin-left: 4.5%;
+                }
+                :last-child {
+                    margin-right: 4.5%;
+                }
+            }
+        }
+        section.blog-page-posts {
+            .blog-page-post-item {
+                margin-left: 3.5%;
+                margin-right: 3.5%;
+                h3 {
+                    font-size: 100%;
+                }
+            }
+        }
+        section.posts {
+            .jumbotron-post-header {
+                .post-header {
+                    width: 92%;
+                    margin-left: 3%;
+                }
+            }
+            margin: 0;
+            padding: 0;
+            .post-header {
+                margin-left: 1%;
+            }
+            .post-page {
+                margin-left: 0px;
+            }
+            .post-article {
+                width: 100%;
+            }
+            .post-wrapper {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .pain-in-the-ass,
+            .video-wrapper {
+                @include side-margins(3%,
+                3%);
+            }
+            .article {
+                margin-left: 3%;
+                div {
+                    @include side-padding(0px,
+                    0px);
+                }
+            }
+        }
+    }
+}

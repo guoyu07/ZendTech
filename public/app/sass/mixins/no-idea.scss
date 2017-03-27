@@ -85,9 +85,6 @@
 
 @mixin footer-social-media($font-size, $margin-left) {
     .social-media-footer {
-        // position: relative;
-        // right: 350px;
-        // top: 20px;
         font-size: $font-size;
         a {
             margin-top: 10px;

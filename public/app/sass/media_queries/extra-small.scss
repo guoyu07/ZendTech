@@ -1,0 +1,87 @@
+@import "./variables";
+@import "./mixins/no-idea";
+@mixin extra-small() {
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .navbar-header {
+            //height: 100px;
+            button {
+                margin-top: 5%;
+                margin-right: 5%;
+                i {
+                    font-size: 230%;
+                }
+            }
+            #logo {
+                margin-left: 8%;
+                margin-top: 5%;
+                position: relative;
+                bottom: 30px;
+            }
+        }
+        .main-nav {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 30px;
+            padding-right: 0px;
+            .my-nav-links {
+                width: 100%;
+                margin-left: 0px;
+                li {
+                    border-bottom: 1px solid $heading-bg;
+                }
+                a {
+                    text-align: center;
+                }
+            }
+        }
+        //home
+        .post-item.col-sm-12 {
+            @include little-screen-home-post();
+        }
+        .home-video {
+            div {
+                margin-bottom: 10%;
+                iframe {
+                    margin-left: 3%;
+                    margin-right: 3%;
+                }
+            }
+        }
+        //POST page
+        //@include little-screen-blog-post();
+        //Blog page
+        section.blog-page-posts {
+            margin-bottom: 20px;
+            .blog-page-post-item {
+                @include side-margins(2%, 2%);
+                margin-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 45%;
+            }
+        }
+        @include blog-post-page();
+        //reg&login
+        .form-wrapper {
+            @include side-margins(0px, 0px);
+            margin-bottom: 20px;
+        }
+        #reg-form,
+        #login-form {
+            @include form-styles();
+        }
+        footer {
+            font-size: 15px;
+            .container {
+                @include side-margins(50px, 0px);
+            }
+            .footer-element {
+                margin-bottom: 0 !important;
+                p {
+                    line-height: 1;
+                }
+            }
+            @include footer-social-media(20px, 10px);
+        }
+    }
+}
